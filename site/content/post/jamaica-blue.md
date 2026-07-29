@@ -1,28 +1,26 @@
 ---
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+title: "Trim and molding styles that transform a room"
+date: 2024-07-08T09:00:00.000Z
+description: Baseboards, crown molding, and casing do more than cover gaps—they define the character of a space. A quick guide to common profiles and applications.
+image: /img/blog-index.jpg
 ---
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+Finish carpentry is where a room's personality really shows. Trim and molding bridge walls, floors, and ceilings while adding architectural interest.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+## Baseboards and shoe molding
 
-## A little history
+Baseboards protect drywall from kicks and bumps while providing a clean transition from wall to floor. Pairing a taller base with shoe molding covers expansion gaps and adds a polished look.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+## Crown molding
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+Crown molding draws the eye upward and can make ceilings feel higher. Profiles range from simple cove styles to elaborate layered designs—choice depends on your home's architecture and the room's scale.
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+## Casing and window trim
 
-## What you need to know before trying
+Door and window casing frames openings and ties trim elements together throughout a home. Consistent casing width and profile create cohesion from room to room.
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+## Matching existing trim
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+In remodels, we often replicate existing profiles so new work blends seamlessly with what's already there. We can match stain, paint, and profile details for a unified result.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
-
+Have a trim project in mind? [Get in touch](/contact) and we'll review your space.

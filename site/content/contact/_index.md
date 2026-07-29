@@ -3,17 +3,17 @@ title: "Contact"
 logo: "/img/logo.svg"
 contact_entries:
   - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
+    text: "Serving the greater metro area — contact us for availability in your area"
   - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+    text: "Monday – Friday: 7AM – 5PM | Saturday: 8AM – 12PM | Closed Sundays"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+We’d love to hear about your project. Whether you’re planning a kitchen remodel,
+need custom built-ins, or want to discuss trim and finish work, reach out and
+we’ll get back to you promptly.
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+<h3 class="f4 b lh-title mb2">How can I get started?</h3>
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+Use the form below for project inquiries, estimates, and consultation requests.
+Tell us about your space, timeline, and what you’re hoping to build—we’ll follow
+up to schedule a conversation.

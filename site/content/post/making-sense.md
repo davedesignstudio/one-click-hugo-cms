@@ -1,27 +1,24 @@
 ---
-title: "Making sense of the SCAA’s new Flavor Wheel"
-date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+title: "Choosing the right wood for your project"
+date: 2024-03-15T10:00:00.000Z
+description: Hardwood, softwood, plywood—here's how to pick materials that balance beauty, durability, and budget for custom cabinetry and built-ins.
 image: /img/blog-flavor_wheel.jpg
 ---
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+Selecting wood is one of the first decisions in any custom carpentry project. The right choice depends on how the piece will be used, where it lives in your home, and what finish you want.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+## Hardwoods for high-traffic areas
 
-## What the updates mean to you
+Oak, maple, and cherry are popular for cabinets and built-ins because they resist wear and take stain and paint well. Oak offers a classic grain pattern; maple provides a cleaner, more uniform look; cherry deepens in color over time.
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+## Softwoods and painted finishes
 
-- producers
-- roasters
-- importers/exporters
-- retailers
-- manufacturers
-- baristas
+Pine and poplar are often used for painted cabinetry and trim. They're easier to work with and cost less than most hardwoods, making them a smart choice when paint—not natural grain—is the final look.
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+## Sheet goods for stability
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+For cabinet boxes and large panels, we often use plywood or MDF with a hardwood face. These materials stay flat and stable, which helps doors and drawers operate smoothly for years.
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+## Ask us before you commit
+
+Every project has different requirements. During your consultation, we'll walk through options for your specific space and help you choose materials that look great and perform well long term.

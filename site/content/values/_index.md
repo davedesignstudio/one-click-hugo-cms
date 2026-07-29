@@ -1,45 +1,35 @@
 ---
-title: "Values"
+title: "About"
 image: /img/about-jumbotron.jpg
 values:
-  - heading: "Shade-grown coffee"
+  - heading: "Precision joinery"
     text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
+      Every cut, joint, and seam matters. We use time-tested techniques and
+      modern tools to ensure tight fits, clean lines, and structures that
+      stay square and strong for decades.
     imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
+  - heading: "Custom design"
     text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
+      Your space is unique, and your woodwork should be too. We collaborate
+      with you on layout, materials, and finishes so each piece reflects
+      how you live and work.
     imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
+  - heading: "Quality materials"
     text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
+      We source hardwoods, plywoods, and finishes selected for durability
+      and beauty. From oak and maple to walnut and cherry, we help you
+      choose materials that suit your project and budget.
     imageUrl: "/img/about-sustainable-farming.jpg"
-  - heading: "Direct sourcing"
+  - heading: "Clear communication"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
+      From estimate to install, we keep you informed. You'll know what to
+      expect on timeline, cost, and process—so there are no surprises when
+      we deliver the finished work.
     imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
+  - heading: "Lasting craftsmanship"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
+      We build things meant to be used every day and admired for years.
+      Solid construction, careful sanding, and professional finishing are
+      standard on every Anthem Carpentry project.
     imageUrl: "/img/about-reinvest-profits.jpg"
 ---
