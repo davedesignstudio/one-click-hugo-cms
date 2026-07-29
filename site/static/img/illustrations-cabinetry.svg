@@ -1,0 +1,10 @@
+<svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Custom cabinetry">
+  <rect width="240" height="180" fill="#E8EFEA"/>
+  <rect x="48" y="36" width="144" height="108" rx="2" fill="none" stroke="#1A2E26" stroke-width="3"/>
+  <line x1="120" y1="36" x2="120" y2="144" stroke="#1A2E26" stroke-width="3"/>
+  <line x1="48" y1="90" x2="192" y2="90" stroke="#1A2E26" stroke-width="3"/>
+  <circle cx="108" cy="68" r="3" fill="#C6A15B"/>
+  <circle cx="132" cy="68" r="3" fill="#C6A15B"/>
+  <circle cx="108" cy="116" r="3" fill="#C6A15B"/>
+  <circle cx="132" cy="116" r="3" fill="#C6A15B"/>
+</svg>

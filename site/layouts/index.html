@@ -1,18 +1,33 @@
 {{ define "main" }}
 
-<textarea id="source">
-{{ .RawContent }}
-</textarea>
-    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+<section class="anthem-hero" style="background-image: url('{{ .Params.image }}')" aria-label="Anthem hero">
+  <div class="anthem-hero__grain" aria-hidden="true"></div>
+  <div class="anthem-hero__content">
+    <p class="anthem-hero__brand">Anthem</p>
+    <h1 class="anthem-hero__headline">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+    <p class="anthem-hero__support">{{ . }}</p>
+    {{ end }}
+    <div class="anthem-hero__cta">
+      <a href="/contact" class="btn raise">Request a consultation</a>
+    </div>
+  </div>
+</section>
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
+<div class="reveal-on-scroll">
 {{ partial "short-text" .Params.blurb}}
+</div>
 
+<div class="reveal-on-scroll">
 {{ partial "2-up" .Params }}
+</div>
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+<div class="reveal-on-scroll">
+{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Our craft" "buttonLink" "/values") }}
+</div>
 
+<div class="reveal-on-scroll">
 {{ partial "blog" . }}
+</div>
 
 {{ end }}

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Custom furniture">
+  <rect width="240" height="180" fill="#E8EFEA"/>
+  <rect x="50" y="70" width="140" height="12" rx="1" fill="#1A2E26"/>
+  <rect x="62" y="82" width="10" height="48" fill="#1A2E26"/>
+  <rect x="168" y="82" width="10" height="48" fill="#1A2E26"/>
+  <rect x="70" y="58" width="100" height="14" rx="1" fill="#C6A15B"/>
+  <path d="M70 58 Q120 40 170 58" fill="none" stroke="#C6A15B" stroke-width="4"/>
+</svg>

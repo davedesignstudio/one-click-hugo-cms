@@ -1,18 +1,12 @@
 <svg viewBox="0 0 280 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anthem">
   <title>Anthem</title>
-  <g fill="#1A2E26">
+  <g fill="#F4F7F5">
     <path d="M6 6h16v5H11v25H6V6zm16 30h5v5H6v-5h16z"/>
-    <!-- A -->
     <path d="M42 38 L54 8 L66 38 H60.5 L57.8 30 H50.2 L47.5 38 Z M51.6 26 H56.4 L54 18.5 Z"/>
-    <!-- N -->
     <path d="M72 38 V8 H78 L90 28 V8 H96 V38 H90 L78 18 V38 Z"/>
-    <!-- T -->
     <path d="M102 8 H128 V14 H118.5 V38 H111.5 V14 H102 Z"/>
-    <!-- H -->
     <path d="M134 8 H140.5 V20 H152.5 V8 H159 V38 H152.5 V26 H140.5 V38 H134 Z"/>
-    <!-- E -->
     <path d="M165 8 H188 V14 H171.5 V20 H185 V26 H171.5 V32 H188 V38 H165 Z"/>
-    <!-- M -->
     <path d="M194 38 V8 H201 L212 26 L223 8 H230 V38 H223.5 V18 L212 34 L200.5 18 V38 Z"/>
   </g>
 </svg>

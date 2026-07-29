@@ -1,28 +1,26 @@
 ---
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+title: "Planning built-ins around an older house"
+date: 2024-06-18T09:15:00.000Z
+description: Out-of-square walls and settled floors aren’t obstacles—they’re the brief for custom carpentry that looks original.
+image: /img/blog-index.jpg
 ---
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+Older homes rarely offer plumb walls or level floors. That’s exactly why custom built-ins belong there: they can absorb irregular geometry and still look intentional.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+## Measure the room, not the drawing
 
-## A little history
+We start with a full site measure—corners, ceiling heights, baseboard profiles, and window trim. Shop drawings then scribe reveals and shadow lines so the finished piece feels settled, not pasted on.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+## Respect the architecture
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+A 1910 Craftsman wants different proportions than a mid-century ranch. Matching existing moldings, rail heights, and wood species keeps new work from shouting.
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+## Leave room to breathe
 
-## What you need to know before trying
+Built-ins need clearance for paint, outlets, and HVAC. We coordinate early with electricians and painters so the install day is fitting—not problem-solving.
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+## Finish in place when it matters
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+Factory-finished pieces go in clean. For scribed edges and long runs of trim, final finish coats on site keep the color continuous across joints that only appear after everything is locked down.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
-
+If your home has a dead corner or a hallway that never quite worked, a built-in is often the most honest fix.

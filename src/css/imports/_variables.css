@@ -1,22 +1,26 @@
 :root {
-	/* Colors */
-	--primary: rgba(255, 68, 0, 1);
-	--highlight: rgba(254, 213, 198, 1);
+	/* Colors — Anthem carpentry */
+	--primary: rgba(198, 161, 91, 1);
+	--highlight: rgba(232, 239, 234, 1);
 	--white: rgba(255, 255, 255, 1);
-	--off-white: rgba(255, 253, 252, 1);
-	--grey-1: rgba(245, 243, 242, 1);
-	--grey-2: rgba(235, 231, 230, 1);
-	--grey-3: rgba(89, 87, 86, 1);
-	--grey-4: rgba(66, 64, 64, 1);
-	--black: rgba(43, 37, 35, 1);
+	--off-white: rgba(244, 247, 245, 1);
+	--grey-1: rgba(232, 239, 234, 1);
+	--grey-2: rgba(214, 224, 218, 1);
+	--grey-3: rgba(74, 90, 82, 1);
+	--grey-4: rgba(42, 56, 48, 1);
+	--black: rgba(26, 46, 38, 1);
+	--ink: rgba(18, 32, 26, 1);
+	--brass: rgba(198, 161, 91, 1);
+	--mist: rgba(244, 247, 245, 1);
 
 	/* Typography */
-	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-	--line-height: 1.5;
+	--font-family: "Manrope", "Avenir Next", Avenir, Helvetica, sans-serif;
+	--font-display: "Syne", "Avenir Next", Avenir, Helvetica, sans-serif;
+	--line-height: 1.55;
 
-	--font-size: 18px;
-	--font-size-m: 20px;
-	--font-size-l: 22px;
+	--font-size: 17px;
+	--font-size-m: 18px;
+	--font-size-l: 19px;
 
 	--body-font-weight: 400;
 	--bold-font-weight: 700;
@@ -32,6 +36,6 @@
 	--spacing-extra-extra-extra-large: 16rem;
 
 	/* Miscelaneous */
-	--border-radius: .25rem;
-	--hover-transition: all 150ms ease;
+	--border-radius: .125rem;
+	--hover-transition: all 180ms ease;
 }
