@@ -1,45 +1,34 @@
 ---
-title: "Values"
+title: "Craft"
 image: /img/about-jumbotron.jpg
 values:
-  - heading: "Shade-grown coffee"
+  - heading: "Honest joinery"
     text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
-    imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
+      Mortise and tenon, dovetails, and well-fitted dados keep pieces strong
+      without relying on hardware alone. When you open a door or lift a leaf,
+      the structure should feel quiet and sure.
+    imageUrl: "/img/about-joinery.jpg"
+  - heading: "Chosen timber"
     text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
-    imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
+      We work primarily in domestic hardwoods—walnut, oak, cherry, maple—selected
+      for grain, stability, and how they will age in your light. Boards are
+      matched so panels read as one composition, not a patchwork.
+    imageUrl: "/img/about-materials.jpg"
+  - heading: "Built for the room"
     text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
-    imageUrl: "/img/about-sustainable-farming.jpg"
-  - heading: "Direct sourcing"
+      Built-ins should disappear into the architecture while still rewarding a
+      closer look. We scribe to walls, level to floors, and detail reveals so
+      cabinetry feels inevitable in the space.
+    imageUrl: "/img/about-built-ins.jpg"
+  - heading: "Tools with intent"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
+      Hand tools and machines each have a job. We mill for accuracy, then refine
+      edges, surfaces, and fit by hand so the wood shows care rather than haste.
+    imageUrl: "/img/about-tools.jpg"
+  - heading: "Finish that lasts"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-reinvest-profits.jpg"
+      Oils, varnishes, and stains are chosen for the species and how you live
+      with the piece. We aim for a surface that invites touch and can be renewed
+      years from now—not sealed away behind plastic sheen.
+    imageUrl: "/img/about-finish.jpg"
 ---

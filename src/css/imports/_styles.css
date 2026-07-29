@@ -13,3 +13,47 @@
     box-shadow: inset 0 -4px 0 var(--primary);
   }
 }
+
+/* Anthem brand type */
+.display,
+h1.lh-title,
+h2.lh-title,
+.f1,
+.f2 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.hero-copy {
+  animation: rise-in 700ms ease-out both;
+}
+
+.btn.raise {
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.btn.raise:hover,
+.btn.raise:focus {
+  transform: translateY(-2px);
+  background-color: var(--highlight);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy,
+  .btn.raise {
+    animation: none;
+    transition: none;
+  }
+}
+

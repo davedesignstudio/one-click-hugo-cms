@@ -1,0 +1,6 @@
+<svg viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anthem">
+  <title>Anthem</title>
+  <path d="M4 28 L14 6 h4.5 L28.5 28 h-4.8 l-1.9-4.8 H10.7 L8.8 28 H4zm8.5-8.6h6.8L15.9 11.2 12.5 19.4z" fill="#F7F8F6"/>
+  <path d="M6 31.5 h18.5 v2.8 H6 z" fill="#C4A35A"/>
+  <text x="38" y="28" font-family="Georgia, 'Times New Roman', Times, serif" font-size="24" font-weight="700" letter-spacing="0.14em" fill="#F7F8F6">ANTHEM</text>
+</svg>
