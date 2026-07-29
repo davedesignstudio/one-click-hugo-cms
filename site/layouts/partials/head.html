@@ -1,6 +1,6 @@
 <head>
 
-	<title>{{ .Title }} | Anthem</title>
+	<title>{{ if eq .Title "Anthem" }}Anthem | Custom carpentry{{ else }}{{ .Title }} | Anthem{{ end }}</title>
 	<link rel="stylesheet" href="/css/main.css" />
 
 	<meta charset="utf-8">

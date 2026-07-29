@@ -9,22 +9,22 @@ description: >-
   finishes that improve with age. We design and build every commission in our shop.
 intro:
   blurbs:
-    - image: /img/illustrations-coffee.svg
+    - image: /img/illustrations-furniture.svg
       text: >
         Custom furniture — dining tables, desks, beds, benches, and casegoods
         designed for your rooms and built from select hardwoods. Each piece is
         made to order; ask about current lead times and available species.
-    - image: /img/illustrations-coffee-gear.svg
+    - image: /img/illustrations-builtins.svg
       text: >
         Built-ins and cabinetry — libraries, kitchens, mudrooms, window seats,
         and storage systems that read as architecture. We mill, fit, and finish
         on site when the work demands it.
-    - image: /img/illustrations-tutorials.svg
+    - image: /img/illustrations-joinery.svg
       text: >
         Fine joinery and restoration — dovetails, mortise-and-tenon frames,
         and careful repairs that respect the original piece. Bring us a worn
         heirloom or a new design that needs lasting structure.
-    - image: /img/illustrations-meeting-space.svg
+    - image: /img/illustrations-consult.svg
       text: >
         Design consultations — walk through your space with us, review material
         samples, and leave with measured drawings and a clear build plan. Email

@@ -9,9 +9,9 @@ intro:
   heading: "What we build"
   text: "From heirloom tables to fitted cabinetry, Anthem brings quiet craftsmanship into the rooms you live in every day. We design, mill, join, and finish each commission in-house."
 products:
-  - image: /img/illustrations-coffee.svg
+  - image: /img/illustrations-furniture.svg
     text: "Custom furniture — dining tables, desks, benches, and casegoods designed around how you actually use your home, built from carefully selected hardwoods."
-  - image: /img/illustrations-coffee-gear.svg
+  - image: /img/illustrations-builtins.svg
     text: "Built-ins and cabinetry — libraries, kitchens, mudrooms, and storage that fit the architecture, not just the floor plan."
 values:
   heading: Our craft
