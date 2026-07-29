@@ -3,17 +3,16 @@ title: "Contact"
 logo: "/img/logo.svg"
 contact_entries:
   - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+    text: "214 Mill Street, Portland, Oregon 97214"
+  - heading: Shop hours
+    text: "Monday – Friday: 8AM – 5PM Closed weekends for builds and installs"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+We’d love to talk through your project—whether it’s a single table or a
+full kitchen of cabinetry. Tell us about the space, the wood you love,
+and how you want the work to live day to day.
 
 <h3 class="f4 b lh-title mb2">How can I get…?</h3>
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+Use the form below for project inquiries, quotes, restoration questions,
+or to schedule a shop visit. Drop us a line—we read every message.

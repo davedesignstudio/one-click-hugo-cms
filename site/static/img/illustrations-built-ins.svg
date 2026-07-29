@@ -1,0 +1,7 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Built-ins">
+  <rect x="16" y="18" width="88" height="84" rx="2" fill="none" stroke="#1A5C4A" stroke-width="3"/>
+  <line x1="16" y1="42" x2="104" y2="42" stroke="#1A5C4A" stroke-width="3"/>
+  <line x1="16" y1="66" x2="104" y2="66" stroke="#1A5C4A" stroke-width="3"/>
+  <line x1="45" y1="42" x2="45" y2="102" stroke="#1A5C4A" stroke-width="3"/>
+  <line x1="75" y1="42" x2="75" y2="102" stroke="#1A5C4A" stroke-width="3"/>
+</svg>

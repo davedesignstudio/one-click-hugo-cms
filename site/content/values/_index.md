@@ -1,45 +1,35 @@
 ---
-title: "Values"
+title: "Craft"
 image: /img/about-jumbotron.jpg
 values:
-  - heading: "Shade-grown coffee"
+  - heading: "Proven joinery"
     text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
-    imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
+      Mortise and tenon, dovetails, and well-fitted dados—not shortcuts.
+      Joints that lock wood together the way furniture has for centuries,
+      so your pieces stay square and strong through seasons and years.
+    imageUrl: "/img/about-craft.jpg"
+  - heading: "Honest materials"
     text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
-    imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
+      We work with solid hardwoods and quality sheet goods chosen for
+      stability and grain. You’ll know what’s going into your project—
+      species, grade, and why it belongs there.
+    imageUrl: "/img/about-materials.jpg"
+  - heading: "Fit to the room"
     text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
-    imageUrl: "/img/about-sustainable-farming.jpg"
-  - heading: "Direct sourcing"
+      Built-ins and cabinetry only succeed when they respect the walls,
+      floors, and light of a real house. We measure on site, scribe where
+      needed, and leave work that looks like it grew there.
+    imageUrl: "/img/about-joinery.jpg"
+  - heading: "Locally rooted"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
+      Whenever we can, we source lumber from regional mills and yards.
+      Shorter supply chains mean better traceability—and wood that has
+      already learned the climate it will live in.
+    imageUrl: "/img/about-local.jpg"
+  - heading: "Finishes that last"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-reinvest-profits.jpg"
+      Oil, varnish, or paint—chosen for use, not just look. We build up
+      durable coats that protect the surface while letting the timber’s
+      character come through.
+    imageUrl: "/img/about-finish.jpg"
 ---

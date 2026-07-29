@@ -1,17 +1,17 @@
 :root {
-	/* Colors */
-	--primary: rgba(255, 68, 0, 1);
-	--highlight: rgba(254, 213, 198, 1);
+	/* Colors — Anthem carpentry: deep pine, cool stone, charcoal */
+	--primary: rgba(26, 92, 74, 1);
+	--highlight: rgba(212, 224, 216, 1);
 	--white: rgba(255, 255, 255, 1);
-	--off-white: rgba(255, 253, 252, 1);
-	--grey-1: rgba(245, 243, 242, 1);
-	--grey-2: rgba(235, 231, 230, 1);
-	--grey-3: rgba(89, 87, 86, 1);
-	--grey-4: rgba(66, 64, 64, 1);
-	--black: rgba(43, 37, 35, 1);
+	--off-white: rgba(242, 243, 241, 1);
+	--grey-1: rgba(230, 233, 230, 1);
+	--grey-2: rgba(214, 219, 214, 1);
+	--grey-3: rgba(84, 92, 88, 1);
+	--grey-4: rgba(52, 58, 55, 1);
+	--black: rgba(22, 28, 25, 1);
 
 	/* Typography */
-	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+	--font-family: 'Bricolage Grotesque', 'Segoe UI', Georgia, serif;
 	--line-height: 1.5;
 
 	--font-size: 18px;

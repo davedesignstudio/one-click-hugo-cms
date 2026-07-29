@@ -1,0 +1,6 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Restoration">
+  <path d="M28 78 L52 28 L72 28 L96 78 Z" fill="none" stroke="#1A5C4A" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="40" y1="78" x2="84" y2="78" stroke="#1A5C4A" stroke-width="3"/>
+  <path d="M58 52 L78 42 L82 50 L62 60 Z" fill="#1A5C4A"/>
+  <line x1="78" y1="42" x2="92" y2="30" stroke="#1A5C4A" stroke-width="3" stroke-linecap="round"/>
+</svg>
