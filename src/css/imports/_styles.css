@@ -2,6 +2,16 @@
   background-color: var(--highlight);
 }
 
+/* Logo */
+.logo-link {
+  width: 11rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
 /* Used in the navbar */
 .divider-grey {
   box-shadow: inset 0 -4px 0 var(--grey-1);
@@ -11,5 +21,66 @@
   }
   & ul a:hover, & ul a:focus {
     box-shadow: inset 0 -4px 0 var(--primary);
+  }
+}
+
+/* Mobile navigation */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: var(--primary);
+  transition: var(--hover-transition);
+}
+
+.nav-toggle--active .nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle--active .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle--active .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-menu {
+  width: 100%;
+}
+
+@media screen and (max-width: 39.99em) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 12px rgba(43, 37, 35, 0.12);
+    z-index: 10;
+  }
+
+  .nav-menu--open {
+    display: block;
+  }
+
+  .nav-menu li {
+    border-top: 1px solid var(--grey-1);
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .nav-toggle {
+    display: none;
   }
 }

@@ -1,12 +1,18 @@
 <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
 
 	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="Anthem Carpentry logo" class="br0 db mb0 w-100"/>
+	<a href="/" class="pa3 db mr4 h-100 flex-none logo-link">
+		<img src="/img/logo.svg" alt="Anthem Carpentry logo" class="br0 db mb0 logo"/>
 	</a>
 
+	<button id="nav-toggle" class="nav-toggle dn-ns pa3 mr3 bg-transparent bn pointer" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+		<span class="nav-toggle-bar"></span>
+		<span class="nav-toggle-bar"></span>
+		<span class="nav-toggle-bar"></span>
+	</button>
+
 	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
+	<ul id="nav-menu" class="flex-ns b grey-3 nav-menu">
 		<li><a href="/products" class="pa3 no-underline db">Services</a></li>
 
 		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
