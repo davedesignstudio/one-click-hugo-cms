@@ -1,102 +1,92 @@
 ---
-title: Our Coffee
+title: Our Services
 type: products
 image: /img/products-jumbotron.jpg
 heading: What we offer
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Anthem Carpentry is your partner for custom woodwork that fits your space and
+  your vision. We take design, fabrication, and installation seriously and
+  we're glad to walk you through every step of the process.
 intro:
   blurbs:
     - image: /img/illustrations-coffee.svg
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        We build custom cabinetry, built-ins, and furniture tailored to your home
+        or business. From kitchen remodels to office millwork, every piece is
+        measured, crafted, and installed with care. Contact us for a consultation
+        on your next project.
     - image: /img/illustrations-coffee-gear.svg
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        Our finish carpentry services cover trim, molding, doors, staircases, and
+        detailed wood accents. Whether you're renovating a single room or finishing
+        a new build, we deliver clean lines and precise fits that elevate the
+        whole space.
     - image: /img/illustrations-tutorials.svg
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+        Not sure where to start? We offer design consultations to help you plan
+        your project, choose materials, and set a realistic budget. Schedule a
+        walkthrough and we'll bring ideas, measurements, and honest advice.
     - image: /img/illustrations-meeting-space.svg
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        We work closely with homeowners, contractors, and designers to keep every
+        project on track. Clear communication, detailed estimates, and reliable
+        scheduling are part of every Anthem Carpentry job.
   heading: What we offer
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Anthem Carpentry is your partner for custom woodwork that fits your space and
+    your vision. We take design, fabrication, and installation seriously and
+    we're glad to walk you through every step of the process.
 main:
-  heading: Great coffee with no compromises
+  heading: Craftsmanship with no compromises
   description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+    We hold our work to the highest standards from the first measurement to the
+    final coat of finish. That's why we're meticulous about material selection,
+    joinery, and fit — and we personally oversee every stage of your project.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: Custom kitchen cabinetry with warm wood tones
     image: /img/products-grid3.jpg
   image2:
-    alt: A green cup of a coffee on a wooden table
+    alt: Detailed trim and molding on a finished interior
     image: /img/products-grid2.jpg
   image3:
-    alt: Coffee beans
+    alt: Hardwood lumber selected for a custom build
     image: /img/products-grid1.jpg
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: Sarah Mitchell
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
+      Anthem built our kitchen cabinets from scratch and the quality is
+      incredible. Every drawer glides perfectly and the fit is flawless.
+  - author: James Rodriguez
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+      Professional, on time, and the finish work on our staircase is the best
+      part of the whole renovation. Highly recommend Anthem Carpentry.
 full_image: /img/products-full-width.jpg
 pricing:
-  heading: Monthly subscriptions
+  heading: Project estimates
   description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
+    Every project is different. We provide detailed written estimates after an
+    on-site consultation so you know exactly what to expect. Contact us to
+    schedule a walkthrough and discuss your vision.
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - description: Ideal for single-room updates and smaller custom pieces.
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
+        - Trim and molding installation
+        - Custom shelving or built-ins
+        - Door and hardware upgrades
       plan: Small
-      price: '50'
-    - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
+      price: 'Quote'
+    - description: Great for kitchen remodels, office millwork, and multi-room projects.
       items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: '80'
-    - description: Want a few tiny batches from different varieties? Try our custom plan
+        - Custom cabinetry design and build
+        - Finish carpentry throughout
+        - Material sourcing and installation
+      plan: Medium
+      price: 'Quote'
+    - description: Full-home renovations, commercial fit-outs, and large-scale builds.
       items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: '?'
+        - End-to-end project management
+        - Custom millwork and furniture
+        - Coordination with other trades
+      plan: Large
+      price: 'Quote'
 ---
-
-
