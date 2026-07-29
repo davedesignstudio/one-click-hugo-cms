@@ -1,28 +1,26 @@
 ---
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+title: 'Just in: air-dried white oak ready for spring commissions'
 date: 2017-01-04T15:04:10.000Z
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  A fresh sticker stack of select white oak is seasoning in the shed. We’re
+  opening a short list of spring table and built-in commissions from this batch.
+image: /img/blog-index.jpg
 ---
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+We expect the boards to reach working moisture by early spring. If you’ve been waiting on a dining table or a run of built-ins in pale oak, now is a good time to get on the list.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+White oak has long been a favorite for furniture that needs strength and quiet grain. Straight, even boards from this load will suit tabletops, shelf systems, and cabinet faces.
 
-## A little history
+## A little context
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+Air-drying with stickers keeps the wood moving slowly and evenly. We still kiln-check critical stock, but this batch is settling the old-fashioned way under cover in the shed.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+> The best furniture starts before the first cut — with lumber that has been given time.
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+We’ll keep a few of the widest boards for a single dining table commission. The rest will go toward cabinetry and benches.
 
-## What you need to know before trying
+## What you need to know before reserving
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+Lead times for spring work are filling. A deposit holds your place in the queue and locks in species and rough dimensions. Finishes and final joinery details get locked during the design visit.
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
-
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
-
+Email the shop or use the contact form if you’d like to see sample boards in person.

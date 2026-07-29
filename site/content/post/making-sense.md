@@ -1,27 +1,23 @@
 ---
-title: "Making sense of the SCAA’s new Flavor Wheel"
+title: "Making sense of grain: how we choose boards for a piece"
 date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+description: Choosing lumber is half the design. Here’s how we read grain, color, and movement before a board ever reaches the saw.
 image: /img/blog-flavor_wheel.jpg
 ---
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+Every commission starts with a pile of boards and a set of questions: Where will this piece live? Will the top take daily wear? Do you want quiet, even grain or something with more figure?
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+Reading lumber well is a craft of its own. We look for straight stock for long rails, book-matched faces for tabletops, and boards that will stay calm through seasonal humidity changes.
 
-## What the updates mean to you
+## What the grain tells you
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+Hardwood species each bring a different voice:
 
-- producers
-- roasters
-- importers/exporters
-- retailers
-- manufacturers
-- baristas
+- walnut — deep color, forgiving workability
+- white oak — strength, ray fleck, outdoor resilience when quartersawn
+- maple — clean light surfaces for paint-grade or pale modern work
+- cherry — warmth that darkens beautifully with light
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+For tabletops we favor rift or quartered material when movement matters. For cabinet faces we often chase a continuous grain story across doors. For drawer sides, maple or poplar keeps things stable and honest inside the case.
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
-
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+Cupping, twist, and buried sapwood show up early if you sight a board down its length. We reject more lumber than we buy — that discipline is what lets a finished piece feel inevitable instead of patched together.

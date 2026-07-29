@@ -3,17 +3,13 @@ title: "Contact"
 logo: "/img/logo.svg"
 contact_entries:
   - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+    text: "1842 Mill Street, South San Francisco, California 94080"
+  - heading: Workshop hours
+    text: "Tuesday – Saturday: 9AM – 5PM Closed Sundays and Mondays"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+We’d love to hear about your project — a single piece, a built-in, or a whole room of millwork. Tell us about the space, the wood you love, and how you want it to feel.
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+<h3 class="f4 b lh-title mb2">How do we start?</h3>
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+Use the form below for new commissions, material questions, restoration work, or to schedule a shop visit. Share photos and rough dimensions if you have them — it helps us prepare.

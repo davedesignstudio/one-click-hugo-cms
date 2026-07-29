@@ -1,5 +1,5 @@
 {
-	"name": "",
+	"name": "Anthem",
 	"icons": [
 		{
 			"src": "\/img\/android-chrome-192x192.png",
@@ -12,6 +12,6 @@
 			"type": "image\/png"
 		}
 	],
-	"theme_color": "#ffffff",
+	"theme_color": "#1F4A3A",
 	"display": "standalone"
 }

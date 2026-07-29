@@ -20,6 +20,44 @@ body {
   background-color: var(--off-white);
  }
 
+h1, h2, h3, .anthem-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.anthem-hero-copy {
+  animation: anthem-rise 900ms ease-out both;
+}
+
+.anthem-hero {
+  animation: anthem-fade 1.2s ease-out both;
+}
+
+@keyframes anthem-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes anthem-fade {
+  from { opacity: 0.86; }
+  to { opacity: 1; }
+}
+
+.btn.raise {
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.btn.raise:hover,
+.btn.raise:focus {
+  transform: translateY(-2px);
+}
+
 p {
   margin-bottom: var(--spacing-medium);
   max-width: 32rem;

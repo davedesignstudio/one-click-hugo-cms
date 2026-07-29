@@ -1,45 +1,35 @@
 ---
-title: "Values"
+title: "Craft"
 image: /img/about-jumbotron.jpg
 values:
-  - heading: "Shade-grown coffee"
+  - heading: "Honest materials"
     text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
+      We work primarily in solid hardwoods — walnut, white oak, maple, cherry —
+      chosen for stability, grain, and how they age. We buy carefully dried stock
+      and let the wood speak through oil and wax, not heavy coatings.
     imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
+  - heading: "Designed for the room"
     text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
+      Every commission starts with the space. We measure, sketch, and sample
+      finishes in place so proportion, light, and use guide the build — not a
+      catalog sketch that ignores your walls.
     imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
+  - heading: "Joinery that lasts"
     text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
+      Mortise-and-tenon frames, dovetailed drawers, and pinned joints are the
+      structure beneath the finish. We cut them carefully so pieces stay true
+      through seasons and years of daily use.
     imageUrl: "/img/about-sustainable-farming.jpg"
-  - heading: "Direct sourcing"
+  - heading: "Finish with patience"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
+      Hand-rubbed oils and carefully built sheens bring out depth in the grain
+      without sealing the wood away from touch. A good finish should invite a
+      hand, not hide the timber.
     imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
+  - heading: "Made in the shop"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
+      Design, milling, joinery, and finishing happen under one roof. That
+      continuity means fewer handoffs, clearer accountability, and furniture
+      that feels considered from the first cut to the last coat.
     imageUrl: "/img/about-reinvest-profits.jpg"
 ---
