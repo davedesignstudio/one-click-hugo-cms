@@ -1,27 +1,26 @@
 ---
-title: "Making sense of the SCAA’s new Flavor Wheel"
-date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+title: "Choosing the right hardwood"
+date: 2017-04-14T11:25:05-04:00
+description: >-
+  A guide to selecting the best wood species for your custom furniture or
+  cabinetry project, from oak and maple to walnut and cherry.
 image: /img/blog-flavor_wheel.jpg
 ---
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+Selecting the right hardwood is one of the most important decisions in any woodworking project. The species you choose affects not only the appearance of the finished piece but also its durability, workability, and cost.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+## Popular hardwood species
 
-## What the updates mean to you
+**Oak** is one of the most widely used hardwoods in American furniture and cabinetry. It has a prominent grain pattern, takes stain well, and is exceptionally durable. Red oak is slightly more porous and less expensive; white oak is denser and more water-resistant.
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+**Maple** offers a clean, subtle grain and a light color that works beautifully in modern and traditional settings alike. Hard maple is one of the hardest domestic woods, making it ideal for cutting boards, countertops, and high-traffic cabinetry.
 
-- producers
-- roasters
-- importers/exporters
-- retailers
-- manufacturers
-- baristas
+**Walnut** is prized for its rich, dark brown color and straight grain. It's a favorite for statement furniture pieces and executive desks. Walnut is softer than oak or maple but machines beautifully and accepts a wide range of finishes.
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+**Cherry** develops a warm, reddish patina over time that many woodworkers consider its greatest asset. It's moderately hard, works easily, and is a classic choice for fine furniture and built-in cabinetry.
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+## What to consider
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+When choosing a species, think about the room's lighting, your existing décor, how the piece will be used, and your budget. We're always happy to bring samples to your home so you can see how different woods look in your space.
+
+Contact us to schedule a consultation and explore your options.

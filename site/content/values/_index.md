@@ -2,44 +2,36 @@
 title: "Values"
 image: /img/about-jumbotron.jpg
 values:
-  - heading: "Shade-grown coffee"
+  - heading: "Sustainable sourcing"
     text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
+      We source our hardwoods from responsible suppliers who practice
+      sustainable forestry. Every board is selected for quality and character,
+      ensuring that the wood we use today will be available for generations
+      of craftsmen to come.
     imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
+  - heading: "Traditional joinery"
     text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
+      Dovetails, mortise and tenon, tongue and groove — we use time-tested
+      joinery techniques that create strong, lasting connections without
+      relying solely on fasteners. These methods have held furniture together
+      for centuries and continue to define quality craftsmanship.
     imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
+  - heading: "Precision craftsmanship"
     text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
+      Every measurement matters, every cut counts. We approach each project
+      with the patience and precision that fine woodworking demands, because
+      the difference between good work and great work is in the details.
     imageUrl: "/img/about-sustainable-farming.jpg"
-  - heading: "Direct sourcing"
+  - heading: "Client collaboration"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
+      Your home is personal, and your woodwork should be too. We work closely
+      with every client from initial design through installation, ensuring the
+      finished piece reflects your vision and fits your space perfectly.
     imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
+  - heading: "Built to last"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
+      We build furniture and cabinetry meant to be passed down, not replaced.
+      By using quality materials, proven techniques, and careful finishing,
+      we create pieces that become part of your family's story for generations.
     imageUrl: "/img/about-reinvest-profits.jpg"
 ---
