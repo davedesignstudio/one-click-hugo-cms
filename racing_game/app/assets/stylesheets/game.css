@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d2137 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.game-header {
+  text-align: center;
+}
+
+.game-header h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff4444, #ffcc00, #44ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tagline {
+  color: #8899bb;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.canvas-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 3px #ffcc00,
+    0 0 40px rgba(255, 100, 0, 0.3),
+    0 20px 60px rgba(0, 0, 0, 0.6);
+  line-height: 0;
+}
+
+#racing-canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.game-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.controls-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aabbcc;
+  font-size: 0.9rem;
+}
+
+kbd {
+  background: #2a2a4a;
+  border: 1px solid #4a4a7a;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #dde;
+  box-shadow: 0 2px 0 #1a1a3a;
+}
+
+.weapons-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.weapon {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 2px solid;
+}
+
+.weapon.banana { background: #3a3000; border-color: #ffd700; color: #ffd700; }
+.weapon.shell { background: #003a10; border-color: #00cc44; color: #00cc44; }
+.weapon.red-shell { background: #3a0000; border-color: #ff3333; color: #ff3333; }
+.weapon.mushroom { background: #3a1020; border-color: #ff6699; color: #ff6699; }
+.weapon.star { background: #3a3000; border-color: #ffee00; color: #ffee00; }
+.weapon.lightning { background: #002a3a; border-color: #66ccff; color: #66ccff; }
+
+@media (max-width: 1060px) {
+  .game-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .canvas-wrapper {
+    width: 100%;
+  }
+
+  #racing-canvas {
+    width: 100%;
+  }
+}
