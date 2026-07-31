@@ -1,0 +1,42 @@
+<% content_for :title, "Leaderboard — KartBlitz" %>
+<% content_for :body_class, "site-body board-body" %>
+
+<header class="topbar">
+  <a class="brand-mark" href="<%= root_path %>">KartBlitz</a>
+  <nav class="topbar-nav">
+    <a href="<%= root_path %>">Home</a>
+    <a class="btn btn-small" href="<%= race_path %>">Race now</a>
+  </nav>
+</header>
+
+<main class="board-page">
+  <p class="brand-hero board-brand">KartBlitz</p>
+  <h1>Leaderboard</h1>
+  <p class="hero-lead">Fastest three-lap finishes across the coastal circuit.</p>
+
+  <% if @results.any? %>
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Racer</th>
+          <th>Place</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @results.each_with_index do |result, index| %>
+          <tr>
+            <td><%= index + 1 %></td>
+            <td><%= result.player_name %></td>
+            <td>P<%= result.place %></td>
+            <td><%= result.finish_time_display %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% else %>
+    <p class="empty-board">No times yet. Be the first on the board.</p>
+    <a class="btn btn-primary" href="<%= race_path %>">Start race</a>
+  <% end %>
+</main>

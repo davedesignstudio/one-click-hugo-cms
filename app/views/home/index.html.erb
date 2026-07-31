@@ -1,0 +1,61 @@
+<% content_for :title, "KartBlitz — Race. Smash. Win." %>
+<% content_for :body_class, "site-body landing-body" %>
+
+<header class="topbar">
+  <a class="brand-mark" href="<%= root_path %>">KartBlitz</a>
+  <nav class="topbar-nav">
+    <a href="<%= race_results_path %>">Leaderboard</a>
+    <a class="btn btn-small" href="<%= race_path %>">Race now</a>
+  </nav>
+</header>
+
+<main class="hero">
+  <div class="hero-atmosphere" aria-hidden="true">
+    <div class="hero-track-lines"></div>
+    <div class="hero-kart hero-kart-a"></div>
+    <div class="hero-kart hero-kart-b"></div>
+    <div class="hero-dust"></div>
+  </div>
+
+  <div class="hero-copy">
+    <p class="brand-hero">KartBlitz</p>
+    <h1>Weapon-packed lap racing in your browser.</h1>
+    <p class="hero-lead">Grab shells, drop bananas, boost past AI rivals, and finish three laps first.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="<%= race_path %>">Start race</a>
+      <a class="btn btn-ghost" href="<%= race_results_path %>">View times</a>
+    </div>
+  </div>
+</main>
+
+<section class="weapons-strip" aria-label="Weapons">
+  <h2>Arsenal</h2>
+  <p>Pick up item crates mid-race. Fire with Space or the on-screen button.</p>
+  <ul class="weapon-list">
+    <li><span class="weapon-icon banana"></span><strong>Banana</strong> — leave a trap</li>
+    <li><span class="weapon-icon shell"></span><strong>Green Shell</strong> — straight shot</li>
+    <li><span class="weapon-icon red-shell"></span><strong>Red Shell</strong> — hunts ahead</li>
+    <li><span class="weapon-icon mushroom"></span><strong>Mushroom</strong> — burst boost</li>
+    <li><span class="weapon-icon oil"></span><strong>Oil Slick</strong> — send them sliding</li>
+    <li><span class="weapon-icon bolt"></span><strong>Lightning</strong> — zap the pack</li>
+  </ul>
+</section>
+
+<% if @top_results.any? %>
+  <section class="home-board">
+    <h2>Fastest finishers</h2>
+    <ol>
+      <% @top_results.each do |result| %>
+        <li>
+          <span><%= result.player_name %></span>
+          <span>P<%= result.place %></span>
+          <span><%= result.finish_time_display %></span>
+        </li>
+      <% end %>
+    </ol>
+  </section>
+<% end %>
+
+<footer class="site-footer">
+  <p>Arrow keys / WASD to drive · Space to fire · Built with Ruby on Rails</p>
+</footer>

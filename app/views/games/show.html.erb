@@ -1,0 +1,88 @@
+<% content_for :title, "Race — KartBlitz" %>
+<% content_for :body_class, "site-body game-body" %>
+
+<div
+  class="race-shell"
+  data-controller="race"
+  data-race-laps-value="<%= @total_laps %>"
+  data-race-results-url-value="<%= race_results_path %>"
+>
+  <header class="race-hud">
+    <a class="brand-mark compact" href="<%= root_path %>">KartBlitz</a>
+    <div class="hud-stats">
+      <div class="hud-chip">
+        <span>Lap</span>
+        <strong data-race-target="lap">1 / <%= @total_laps %></strong>
+      </div>
+      <div class="hud-chip">
+        <span>Place</span>
+        <strong data-race-target="place">1st</strong>
+      </div>
+      <div class="hud-chip">
+        <span>Time</span>
+        <strong data-race-target="timer">0:00.00</strong>
+      </div>
+    </div>
+    <div class="hud-item" data-race-target="itemSlot">
+      <span>Item</span>
+      <strong data-race-target="itemName">—</strong>
+    </div>
+  </header>
+
+  <div class="canvas-wrap">
+    <canvas data-race-target="canvas" width="1200" height="720"></canvas>
+
+    <div class="countdown" data-race-target="countdown" hidden></div>
+
+    <div class="touch-controls" data-race-target="touchControls">
+      <button type="button" data-action="touchstart->race#pressLeft touchend->race#releaseLeft mousedown->race#pressLeft mouseup->race#releaseLeft">◀</button>
+      <div class="touch-mid">
+        <button type="button" data-action="touchstart->race#pressUp touchend->race#releaseUp mousedown->race#pressUp mouseup->race#releaseUp">▲</button>
+        <button type="button" class="fire-btn" data-action="touchstart->race#pressFire touchend->race#releaseFire mousedown->race#pressFire mouseup->race#releaseFire">FIRE</button>
+        <button type="button" data-action="touchstart->race#pressDown touchend->race#releaseDown mousedown->race#pressDown mouseup->race#releaseDown">▼</button>
+      </div>
+      <button type="button" data-action="touchstart->race#pressRight touchend->race#releaseRight mousedown->race#pressRight mouseup->race#releaseRight">▶</button>
+    </div>
+  </div>
+
+  <aside class="standings" aria-label="Race standings">
+    <h2>Field</h2>
+    <ol data-race-target="standings"></ol>
+  </aside>
+
+  <div class="overlay" data-race-target="overlay">
+    <div class="overlay-card">
+      <p class="brand-hero overlay-brand">KartBlitz</p>
+      <h1 data-race-target="overlayTitle">Ready to race?</h1>
+      <p data-race-target="overlayMessage">Three laps. Four karts. Item crates drop weapons like Mario Kart.</p>
+      <form class="name-form" data-action="submit->race#startRace">
+        <label>
+          Your racer name
+          <input type="text" maxlength="16" value="You" data-race-target="nameInput" autocomplete="nickname">
+        </label>
+        <button class="btn btn-primary" type="submit">Lights out</button>
+      </form>
+      <p class="overlay-hint">Controls: Arrow keys or WASD · Space / click Fire for weapons</p>
+    </div>
+  </div>
+
+  <div class="overlay finish-overlay" data-race-target="finishOverlay" hidden>
+    <div class="overlay-card">
+      <p class="brand-hero overlay-brand">KartBlitz</p>
+      <h1 data-race-target="finishTitle">Finished!</h1>
+      <p data-race-target="finishMessage"></p>
+      <form class="name-form" data-action="submit->race#saveResult">
+        <label>
+          Save your name
+          <input type="text" maxlength="16" data-race-target="saveNameInput" autocomplete="nickname">
+        </label>
+        <button class="btn btn-primary" type="submit" data-race-target="saveButton">Post to leaderboard</button>
+      </form>
+      <p class="save-status" data-race-target="saveStatus" hidden></p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button" data-action="race#restart">Race again</button>
+        <a class="btn btn-ghost" href="<%= race_results_path %>">Leaderboard</a>
+      </div>
+    </div>
+  </div>
+</div>
