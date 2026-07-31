@@ -57,6 +57,7 @@ h2,
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1.25rem 1.5rem;
   max-width: 1120px;
   margin: 0 auto;
@@ -78,6 +79,7 @@ h2,
 
 .site-nav nav {
   display: flex;
+  flex-shrink: 0;
   gap: 1rem;
   align-items: center;
 }
@@ -568,8 +570,10 @@ h2,
   transition: opacity 220ms ease;
 }
 
-.overlay[hidden] {
-  display: none;
+.overlay[hidden],
+.overlay-actions[hidden],
+[hidden] {
+  display: none !important;
 }
 
 .overlay-card {

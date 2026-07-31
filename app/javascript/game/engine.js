@@ -68,6 +68,7 @@ export class RaceEngine {
 
     this._onKeyDown = (e) => this.handleKey(e, true)
     this._onKeyUp = (e) => this.handleKey(e, false)
+    this.loop = this.loop.bind(this)
   }
 
   bindInput() {
@@ -141,6 +142,11 @@ export class RaceEngine {
     })
   }
 
+  preview() {
+    this.reset()
+    this.draw()
+  }
+
   start() {
     this.reset()
     this.running = true
@@ -157,7 +163,7 @@ export class RaceEngine {
     this.unbindInput()
   }
 
-  loop = (ts) => {
+  loop(ts) {
     if (!this.running) return
     if (!this.lastTs) this.lastTs = ts
     const dt = Math.min(0.033, (ts - this.lastTs) / 1000)
@@ -387,8 +393,10 @@ export class RaceEngine {
     }
 
     drawWeapons(ctx, this.projectiles, this.hazards, this.time)
-    // draw karts back-to-front by y for slight depth
-    [...this.karts].sort((a, b) => a.y - b.y).forEach((kart) => kart.draw(ctx, this.time))
+
+    // Leading ; avoids ASI treating this as a computed-access continuation.
+    const drawOrder = [...this.karts].sort((a, b) => a.y - b.y)
+    drawOrder.forEach((kart) => kart.draw(ctx, this.time))
 
     if (this.countdown > 0) {
       const label = this.countdown <= 0.45 ? "GO!" : String(Math.ceil(this.countdown))

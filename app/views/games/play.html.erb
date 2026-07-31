@@ -38,9 +38,9 @@
     <canvas data-race-target="canvas" width="1280" height="720"></canvas>
     <div class="overlay" data-race-target="overlay">
       <div class="overlay-card" data-race-target="overlayCard">
-        <p class="overlay-kicker" data-race-target="overlayKicker">Get Ready</p>
-        <h2 data-race-target="overlayTitle">TurboShell Rally</h2>
-        <p data-race-target="overlayBody">Drive with arrows or WASD. Space uses your item.</p>
+        <p class="overlay-kicker" data-race-target="overlayKicker"><%= @character[:name] %> · Neon Loop</p>
+        <h2 data-race-target="overlayTitle">Ready to Roll</h2>
+        <p data-race-target="overlayBody">Arrows / WASD to drive. Space fires your item. First to 3 laps wins.</p>
         <button type="button" class="btn btn-primary" data-action="race#start" data-race-target="startButton">
           Lights Out
         </button>

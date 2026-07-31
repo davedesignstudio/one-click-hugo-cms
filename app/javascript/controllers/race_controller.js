@@ -38,10 +38,13 @@ export default class extends Controller {
       onFinish: (payload) => this.handleFinish(payload)
     })
 
+    this.finishActionsTarget.hidden = true
+    this.startButtonTarget.hidden = false
     this.overlayKickerTarget.textContent = `${this.characterNameValue} · Neon Loop`
     this.overlayTitleTarget.textContent = "Ready to Roll"
     this.overlayBodyTarget.textContent =
       "Arrows / WASD to drive. Space fires your item. First to 3 laps wins."
+    this.engine.preview()
   }
 
   disconnect() {
