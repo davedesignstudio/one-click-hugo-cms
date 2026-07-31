@@ -1,0 +1,71 @@
+<% content_for :title, "BLASTKART — Weapon Racing" %>
+<% content_for :body_class, "page home" %>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="atmosphere__track"></div>
+  <div class="atmosphere__streaks"></div>
+</div>
+
+<header class="topbar">
+  <a class="brand brand--mark" href="<%= root_path %>">BLASTKART</a>
+  <nav class="topbar__nav">
+    <a href="<%= race_results_path %>">Leaderboard</a>
+  </nav>
+</header>
+
+<main class="hero">
+  <p class="hero__brand">BLASTKART</p>
+  <h1 class="hero__headline">Fire shells. Drop bananas. Steal the finish.</h1>
+  <p class="hero__lede">A browser racing brawl with Mario Kart-style weapons, AI rivals, and a three-lap coastal circuit.</p>
+
+  <%= form_with url: race_path, method: :get, local: true, class: "race-form", data: { turbo: false } do |f| %>
+    <label class="race-form__field">
+      <span>Racer name</span>
+      <input type="text" name="player_name" maxlength="16" placeholder="YOUR TAG" autocomplete="nickname" required>
+    </label>
+    <label class="race-form__field">
+      <span>Track</span>
+      <select name="track">
+        <option value="coastal_loop">Coastal Loop</option>
+        <option value="thunder_bowl">Thunder Bowl</option>
+        <option value="neon_canyon">Neon Canyon</option>
+      </select>
+    </label>
+    <button type="submit" class="btn btn--primary">Start Race</button>
+  <% end %>
+</main>
+
+<section class="weapons-strip" aria-label="Weapons">
+  <h2>Arsenal</h2>
+  <ul class="weapons-strip__list">
+    <li><strong>Green Shell</strong> straight shot</li>
+    <li><strong>Red Shell</strong> locks onto the kart ahead</li>
+    <li><strong>Banana</strong> spins whoever hits it</li>
+    <li><strong>Mushroom</strong> short boost blast</li>
+    <li><strong>Bomb</strong> wide blast radius</li>
+    <li><strong>Lightning</strong> shrinks the pack</li>
+  </ul>
+</section>
+
+<% if @top_results.any? %>
+  <section class="home-board">
+    <div class="home-board__head">
+      <h2>Hot laps</h2>
+      <a href="<%= race_results_path %>">Full board</a>
+    </div>
+    <ol class="leader-list">
+      <% @top_results.each_with_index do |result, i| %>
+        <li>
+          <span class="leader-list__place"><%= i + 1 %></span>
+          <span class="leader-list__name"><%= result.player_name %></span>
+          <span class="leader-list__track"><%= result.track.tr("_", " ") %></span>
+          <span class="leader-list__time"><%= result.formatted_time %></span>
+        </li>
+      <% end %>
+    </ol>
+  </section>
+<% end %>
+
+<footer class="site-footer">
+  <p>Arrow keys / WASD to drive · Space to fire · Shift to drift</p>
+</footer>

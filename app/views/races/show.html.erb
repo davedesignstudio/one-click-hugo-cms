@@ -1,0 +1,42 @@
+<% content_for :title, "Race — BLASTKART" %>
+<% content_for :body_class, "page race-page" %>
+
+<div
+  id="blastkart-root"
+  data-controller="race"
+  data-race-player-value="<%= @player_name %>"
+  data-race-track-value="<%= @track %>"
+  data-race-results-url-value="<%= race_results_path %>"
+>
+  <header class="hud-top">
+    <a class="brand brand--compact" href="<%= root_path %>">BLASTKART</a>
+    <div class="hud-meta">
+      <span data-race-target="place">—</span>
+      <span data-race-target="lap">LAP 1/3</span>
+      <span data-race-target="timer">0:00.00</span>
+    </div>
+    <div class="hud-item" data-race-target="item">EMPTY</div>
+  </header>
+
+  <canvas data-race-target="canvas" width="1280" height="720" aria-label="BLASTKART race track"></canvas>
+
+  <div class="hud-bottom">
+    <p class="hud-hint">↑ accelerate · ←→ steer · Space fire · Shift drift</p>
+    <div class="touch-controls" data-race-target="touch">
+      <button type="button" data-action="touchstart->race#pressLeft touchend->race#releaseLeft mousedown->race#pressLeft mouseup->race#releaseLeft">◀</button>
+      <button type="button" data-action="touchstart->race#pressAccel touchend->race#releaseAccel mousedown->race#pressAccel mouseup->race#releaseAccel">▲</button>
+      <button type="button" data-action="touchstart->race#pressRight touchend->race#releaseRight mousedown->race#pressRight mouseup->race#releaseRight">▶</button>
+      <button type="button" class="touch-fire" data-action="touchstart->race#fire click->race#fire">FIRE</button>
+    </div>
+  </div>
+
+  <div class="overlay" data-race-target="overlay">
+    <div class="overlay__panel">
+      <p class="overlay__brand">BLASTKART</p>
+      <h1 data-race-target="overlayTitle">Ready?</h1>
+      <p data-race-target="overlayText">Hit the item boxes. Ruin their race.</p>
+      <button type="button" class="btn btn--primary" data-action="race#start" data-race-target="startBtn">Ignition</button>
+      <a class="overlay__link" href="<%= root_path %>" data-race-target="homeLink" hidden>Back to garage</a>
+    </div>
+  </div>
+</div>

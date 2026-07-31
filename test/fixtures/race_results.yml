@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_name: MyString
+  time_ms: 1
+  laps: 1
+  weapons_used: 1
+  place: 1
+  track: MyString
+
+two:
+  player_name: MyString
+  time_ms: 1
+  laps: 1
+  weapons_used: 1
+  place: 1
+  track: MyString

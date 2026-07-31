@@ -1,0 +1,45 @@
+<% content_for :title, "Leaderboard — BLASTKART" %>
+<% content_for :body_class, "page board-page" %>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="atmosphere__track"></div>
+</div>
+
+<header class="topbar">
+  <a class="brand brand--mark" href="<%= root_path %>">BLASTKART</a>
+  <nav class="topbar__nav">
+    <a href="<%= race_path %>">Race</a>
+  </nav>
+</header>
+
+<main class="board">
+  <p class="board__brand">BLASTKART</p>
+  <h1>Leaderboard</h1>
+  <p class="board__lede">Fastest three-lap runs across every circuit.</p>
+
+  <div class="board__filters">
+    <a class="<%= @track.blank? ? 'is-active' : '' %>" href="<%= race_results_path %>">All</a>
+    <% RaceResult::TRACKS.each do |track| %>
+      <a class="<%= @track == track ? 'is-active' : '' %>" href="<%= race_results_path(track: track) %>"><%= track.tr("_", " ") %></a>
+    <% end %>
+  </div>
+
+  <% if @results.any? %>
+    <ol class="leader-list leader-list--full">
+      <% @results.each_with_index do |result, i| %>
+        <li>
+          <span class="leader-list__place"><%= i + 1 %></span>
+          <span class="leader-list__name"><%= result.player_name %></span>
+          <span class="leader-list__track"><%= result.track.tr("_", " ") %></span>
+          <span class="leader-list__place-finish">P<%= result.place || "-" %></span>
+          <span class="leader-list__time"><%= result.formatted_time %></span>
+        </li>
+      <% end %>
+    </ol>
+  <% end %>
+
+  <% if @results.empty? %>
+    <p class="empty">No times yet. Be the first to leave rubber on the board.</p>
+    <a class="btn btn--primary" href="<%= race_path %>">Start Race</a>
+  <% end %>
+</main>
