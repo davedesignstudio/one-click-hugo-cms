@@ -1,5 +1,7 @@
 # Hugo template for Netlify CMS with Netlify Identity
 
+> **Kart Racer Game**: A Mario Kart-style browser racing game built with Ruby on Rails is available in the [`kart_racer/`](kart_racer/) directory. See [kart_racer/README.md](kart_racer/README.md) for setup and play instructions.
+
 This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
 
 ## Getting started

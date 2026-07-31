@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer components {
+  .kart-home {
+    padding: 2rem 1rem;
+  }
+
+  .hud-panel {
+    @apply bg-gray-800/90 text-white font-bold px-4 py-2 rounded-lg border border-gray-600 text-sm;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .weapon-panel {
+    @apply border-yellow-500/50 text-yellow-300;
+    min-width: 140px;
+  }
+
+  .game-canvas-wrapper {
+    max-width: 1024px;
+    position: relative;
+  }
+
+  .game-canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #1a1a2e;
+  }
+
+  .game-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+  }
+
+  .game-overlay.hidden {
+    display: none;
+  }
+
+  .overlay-content {
+    background: rgba(30, 30, 50, 0.95);
+    border: 2px solid #374151;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .kart-game {
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  kbd {
+    font-family: monospace;
+  }
+}

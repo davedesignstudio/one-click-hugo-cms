@@ -1,0 +1,76 @@
+<% content_for :title, "Race! - Kart Racer" %>
+
+<div class="kart-game w-full" data-controller="game">
+  <!-- HUD -->
+  <div class="flex flex-wrap justify-between items-center gap-4 mb-4 px-2">
+    <div class="flex gap-4 flex-wrap">
+      <div class="hud-panel" data-game-target="lap">Lap 1/3</div>
+      <div class="hud-panel" data-game-target="position">1st / 4</div>
+      <div class="hud-panel" data-game-target="timer">0.0s</div>
+    </div>
+    <div class="flex gap-4 flex-wrap">
+      <div class="hud-panel weapon-panel" data-game-target="weapon">—</div>
+      <div class="hud-panel" data-game-target="speed">0.0 mph</div>
+    </div>
+  </div>
+
+  <!-- Game Canvas -->
+  <div class="game-canvas-wrapper relative mx-auto">
+    <canvas
+      data-game-target="canvas"
+      width="1024"
+      height="768"
+      class="game-canvas rounded-xl shadow-2xl border-2 border-gray-700"
+    ></canvas>
+
+    <!-- Start Overlay -->
+    <div data-game-target="overlay" class="game-overlay">
+      <div class="overlay-content">
+        <h2 class="text-3xl font-black text-white mb-6">Ready to Race?</h2>
+        <div class="mb-4">
+          <label class="block text-gray-300 text-sm mb-2">Your Name</label>
+          <input
+            type="text"
+            data-game-target="nameInput"
+            value="Racer"
+            maxlength="20"
+            class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white text-center text-lg focus:outline-none focus:border-yellow-400"
+          />
+        </div>
+        <button
+          data-game-target="startButton"
+          data-action="click->game#startRace"
+          class="w-full bg-red-600 hover:bg-red-500 text-white font-bold text-xl py-4 rounded-xl transition"
+        >
+          🏁 Start Race
+        </button>
+        <p class="text-gray-400 text-sm mt-4">
+          WASD / Arrows to drive · Space to use weapon
+        </p>
+        <%= link_to "← Back to Menu", root_path, class: "inline-block mt-4 text-gray-400 hover:text-white text-sm" %>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post-race save -->
+  <div data-game-target="saveForm" class="hidden mt-6 text-center">
+    <p data-game-target="resultText" class="text-xl text-white mb-4"></p>
+    <div class="flex gap-3 justify-center items-center flex-wrap">
+      <input type="hidden" data-game-target="saveName" />
+      <button
+        data-game-target="saveButton"
+        data-action="click->game#saveScore"
+        class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold px-6 py-2 rounded-lg"
+      >
+        Save Score
+      </button>
+      <button
+        data-action="click->game#restart"
+        class="bg-gray-700 hover:bg-gray-600 text-white font-bold px-6 py-2 rounded-lg"
+      >
+        Race Again
+      </button>
+      <%= link_to "Menu", root_path, class: "text-gray-400 hover:text-white px-4" %>
+    </div>
+  </div>
+</div>
