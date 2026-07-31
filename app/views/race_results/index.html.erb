@@ -1,0 +1,29 @@
+<% content_for :title, "Leaderboard — BashKart" %>
+
+<header class="topbar">
+  <a class="brand" href="<%= root_path %>">BashKart</a>
+  <nav class="nav">
+    <a href="<%= play_path %>">Race</a>
+    <a href="<%= root_path %>">Home</a>
+  </nav>
+</header>
+
+<main class="section" style="padding-top: 6rem;">
+  <h2>Leaderboard</h2>
+  <p class="section__sub">Fastest finish times on this server.</p>
+
+  <% if @results.any? %>
+    <ol class="board">
+      <% @results.each_with_index do |result, index| %>
+        <li>
+          <span class="board__rank"><%= index + 1 %></span>
+          <span class="board__name"><%= result.player_name %></span>
+          <span class="board__meta">P<%= result.position %> · <%= result.weapon_hits %> hits</span>
+          <span class="board__time"><%= result.formatted_time %></span>
+        </li>
+      <% end %>
+    </ol>
+  <% else %>
+    <p class="empty">No results yet.</p>
+  <% end %>
+</main>

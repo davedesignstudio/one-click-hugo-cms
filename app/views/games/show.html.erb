@@ -1,0 +1,70 @@
+<% content_for :title, "Race — BashKart" %>
+<% content_for :body_class, "page play" %>
+
+<div class="game-shell"
+     data-controller="race"
+     data-race-results-url-value="<%= race_results_path %>"
+     data-race-csrf-value="<%= form_authenticity_token %>">
+  <header class="game-top">
+    <a class="brand brand--compact" href="<%= root_path %>">BashKart</a>
+    <div class="hud" id="hud">
+      <div class="hud__chip"><span>Lap</span><strong id="hud-lap">1/3</strong></div>
+      <div class="hud__chip"><span>Place</span><strong id="hud-place">1st</strong></div>
+      <div class="hud__chip"><span>Time</span><strong id="hud-time">0:00.00</strong></div>
+      <div class="hud__chip hud__chip--item"><span>Item</span><strong id="hud-item">—</strong></div>
+    </div>
+  </header>
+
+  <div class="stage">
+    <canvas id="race-canvas" width="1280" height="720" aria-label="BashKart race track"></canvas>
+
+    <div class="overlay" id="overlay-start">
+      <p class="brand-mark">BashKart</p>
+      <h1>Ready to bash?</h1>
+      <p>Collect crates. Fire weapons. Finish three laps first.</p>
+      <button type="button" class="btn btn--primary" id="btn-start">Lights Out</button>
+      <p class="hint">↑ accelerate · ← → steer · Space use item</p>
+    </div>
+
+    <div class="overlay overlay--hidden" id="overlay-finish">
+      <p class="brand-mark">BashKart</p>
+      <h1 id="finish-title">Finished!</h1>
+      <p id="finish-detail"></p>
+      <form id="score-form" class="score-form">
+        <label for="player-name">Name for the board</label>
+        <input id="player-name" name="player_name" maxlength="20" placeholder="Racer" autocomplete="nickname">
+        <button type="submit" class="btn btn--primary">Save Time</button>
+      </form>
+      <p class="score-status" id="score-status" hidden></p>
+      <div class="cta-row">
+        <button type="button" class="btn btn--primary" id="btn-retry">Race Again</button>
+        <%= link_to "Home", root_path, class: "btn btn--ghost" %>
+      </div>
+    </div>
+  </div>
+
+  <aside class="side-panel">
+    <h2>Standings</h2>
+    <ol class="standings" id="standings"></ol>
+    <h2>Recent board</h2>
+    <% if @leaderboard.any? %>
+      <ol class="board board--compact">
+        <% @leaderboard.each_with_index do |result, index| %>
+          <li>
+            <span><%= index + 1 %>. <%= result.player_name %></span>
+            <span><%= result.formatted_time %></span>
+          </li>
+        <% end %>
+      </ol>
+    <% else %>
+      <p class="empty">Win a race to post a time.</p>
+    <% end %>
+    <div class="touch-controls" aria-hidden="true">
+      <button type="button" data-touch="left">◀</button>
+      <button type="button" data-touch="accel">▲</button>
+      <button type="button" data-touch="right">▶</button>
+      <button type="button" data-touch="brake">▼</button>
+      <button type="button" data-touch="item" class="touch-item">Use</button>
+    </div>
+  </aside>
+</div>

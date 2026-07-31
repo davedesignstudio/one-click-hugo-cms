@@ -1,0 +1,97 @@
+<% content_for :title, "BashKart — Arcade Weapon Racing" %>
+<% content_for :body_class, "page home" %>
+
+<header class="topbar">
+  <a class="brand" href="<%= root_path %>">BashKart</a>
+  <nav class="nav">
+    <a href="<%= play_path %>">Race</a>
+    <a href="#weapons">Weapons</a>
+    <a href="#leaderboard">Times</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__atmosphere" aria-hidden="true"></div>
+    <div class="hero__copy">
+      <p class="brand-mark">BashKart</p>
+      <h1>Drift, bash, and boost your way to the finish.</h1>
+      <p class="lede">A web kart racer with Mario Kart-style weapons — shells, bananas, lightning, and mushrooms — served by Ruby on Rails.</p>
+      <div class="cta-row">
+        <%= link_to "Start Race", play_path, class: "btn btn--primary" %>
+        <a href="#weapons" class="btn btn--ghost">See Weapons</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="weapons" class="section weapons">
+    <h2>Pick up. Fire. Chaos.</h2>
+    <p class="section__sub">Hit the glowing crates for a random weapon. Press Space (or the Use button) to unleash it.</p>
+    <ul class="weapon-list">
+      <li>
+        <span class="weapon-icon weapon-icon--banana" aria-hidden="true"></span>
+        <strong>Banana Peel</strong>
+        <span>Drop it behind you. One slip and rivals spin out.</span>
+      </li>
+      <li>
+        <span class="weapon-icon weapon-icon--green" aria-hidden="true"></span>
+        <strong>Green Shell</strong>
+        <span>Straight-shot projectile. Aim with your kart.</span>
+      </li>
+      <li>
+        <span class="weapon-icon weapon-icon--red" aria-hidden="true"></span>
+        <strong>Red Shell</strong>
+        <span>Locks onto the racer ahead and hunts them down.</span>
+      </li>
+      <li>
+        <span class="weapon-icon weapon-icon--mushroom" aria-hidden="true"></span>
+        <strong>Mushroom</strong>
+        <span>A hard burst of speed for overtaking or escaping.</span>
+      </li>
+      <li>
+        <span class="weapon-icon weapon-icon--bolt" aria-hidden="true"></span>
+        <strong>Lightning</strong>
+        <span>Shrinks and slows every rival for a few seconds.</span>
+      </li>
+      <li>
+        <span class="weapon-icon weapon-icon--oil" aria-hidden="true"></span>
+        <strong>Oil Slick</strong>
+        <span>Leave a slippery patch that wrecks traction.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section how">
+    <h2>How to drive</h2>
+    <p class="section__sub">Three laps. Four karts. Last one across still gets bragging rights — barely.</p>
+    <dl class="controls">
+      <div><dt>Steer</dt><dd>← → or A D</dd></div>
+      <div><dt>Accelerate</dt><dd>↑ or W</dd></div>
+      <div><dt>Brake / Reverse</dt><dd>↓ or S</dd></div>
+      <div><dt>Use Weapon</dt><dd>Space</dd></div>
+    </dl>
+  </section>
+
+  <section id="leaderboard" class="section leaderboard">
+    <h2>Fastest finishers</h2>
+    <p class="section__sub">Best times saved from this Rails app.</p>
+    <% if @leaderboard.any? %>
+      <ol class="board">
+        <% @leaderboard.each_with_index do |result, index| %>
+          <li>
+            <span class="board__rank"><%= index + 1 %></span>
+            <span class="board__name"><%= result.player_name %></span>
+            <span class="board__meta">P<%= result.position %> · <%= result.weapon_hits %> hits</span>
+            <span class="board__time"><%= result.formatted_time %></span>
+          </li>
+        <% end %>
+      </ol>
+    <% else %>
+      <p class="empty">No times yet. Be the first on the board.</p>
+    <% end %>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>BashKart — Ruby on Rails arcade racer</p>
+</footer>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= content_for(:title) || "BashKart — Weapon Racing" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="BashKart">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Arcade kart racing with banana peels, shells, boosts, and lightning — powered by Ruby on Rails.">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Teko:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <%= stylesheet_link_tag :app %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="<%= content_for?(:body_class) ? yield(:body_class) : 'page' %>">
+    <%= yield %>
+  </body>
+</html>
