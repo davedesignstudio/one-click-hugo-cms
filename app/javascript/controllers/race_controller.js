@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import { RaceEngine, formatRaceTime } from "game/engine"
+import { drawTrack } from "game/track"
 
 export default class extends Controller {
   static targets = [
@@ -48,12 +49,9 @@ export default class extends Controller {
   drawIdle() {
     const canvas = this.canvasTarget
     const ctx = canvas.getContext("2d")
-    ctx.fillStyle = "#173028"
+    drawTrack(ctx)
+    ctx.fillStyle = "rgba(8, 14, 12, 0.35)"
     ctx.fillRect(0, 0, canvas.width, canvas.height)
-    ctx.fillStyle = "rgba(247, 241, 232, 0.7)"
-    ctx.font = "600 28px Outfit, sans-serif"
-    ctx.textAlign = "center"
-    ctx.fillText("Waiting for lights out…", canvas.width / 2, canvas.height / 2)
   }
 
   startRace(event) {

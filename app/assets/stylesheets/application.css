@@ -74,12 +74,23 @@ h2 {
 }
 
 .brand-hero {
+  position: relative;
+  z-index: 2;
   margin: 0;
-  font-size: clamp(4.5rem, 14vw, 9rem);
-  line-height: 0.85;
+  font-size: clamp(5.5rem, 16vw, 10.5rem);
+  line-height: 0.82;
   color: var(--sun);
-  text-shadow: 0 0.04em 0 rgba(232, 93, 4, 0.55);
+  text-shadow: 0 0.05em 0 rgba(232, 93, 4, 0.65);
   animation: brand-in 0.8s ease-out both;
+}
+
+.hero-tagline {
+  margin-top: 0.35rem;
+  max-width: 14ch;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem) !important;
+  line-height: 1.05 !important;
+  color: var(--foam);
+  animation: brand-in 0.9s ease-out 0.08s both;
 }
 
 .topbar {
@@ -297,8 +308,13 @@ h2 {
   font-size: 0.95rem;
 }
 
-.board-brand {
-  font-size: clamp(3.5rem, 10vw, 6rem);
+.board-kicker {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sun);
 }
 
 .results-table {
