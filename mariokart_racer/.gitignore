@@ -1,0 +1,35 @@
+# Ignore bundler config and vendor bundle
+/.bundle
+/vendor/bundle
+
+# Ignore all logfiles and tempfiles
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/tmp/pids/*
+!/tmp/pids/.keep
+
+# Ignore storage and master key
+/storage/*
+!/storage/.keep
+/config/master.key
+/config/credentials/*.key
+
+# Ignore database
+/db/*.sqlite3
+/db/*.sqlite3-*
+
+# Ignore assets
+/public/assets
+
+# Ignore node modules if added later
+/node_modules
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore IDE
+.idea/
+.vscode/

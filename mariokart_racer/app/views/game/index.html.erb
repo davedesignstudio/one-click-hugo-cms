@@ -1,0 +1,80 @@
+<% content_for :title, "Kart Blitz — Mario Kart Style Racing" %>
+
+<div class="game-shell">
+  <header class="game-header">
+    <h1>Kart Blitz</h1>
+    <p class="tagline">Race. Drift. Blast your rivals.</p>
+  </header>
+
+  <div class="game-layout">
+    <aside class="hud-panel">
+      <div class="hud-block">
+        <h2>Standings</h2>
+        <ol id="standings" class="standings-list"></ol>
+      </div>
+
+      <div class="hud-block">
+        <h2>Your Kart</h2>
+        <div class="stat"><span>Lap</span><strong id="hud-lap">1 / 3</strong></div>
+        <div class="stat"><span>Speed</span><strong id="hud-speed">0</strong></div>
+        <div class="stat"><span>Position</span><strong id="hud-position">-</strong></div>
+        <div class="item-slot" id="hud-item">
+          <span class="item-empty">No item</span>
+        </div>
+      </div>
+
+      <div class="hud-block controls-help">
+        <h2>Controls</h2>
+        <ul>
+          <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or arrows — Drive</li>
+          <li><kbd>Space</kbd> — Use weapon</li>
+          <li><kbd>R</kbd> — Restart race</li>
+        </ul>
+      </div>
+
+      <div class="hud-block weapons-guide">
+        <h2>Weapons</h2>
+        <ul class="weapon-list">
+          <li><span class="w-icon shell">🐢</span> Green Shell — fires ahead</li>
+          <li><span class="w-icon red-shell">🔴</span> Red Shell — homing attack</li>
+          <li><span class="w-icon banana">🍌</span> Banana — drop behind you</li>
+          <li><span class="w-icon mushroom">🍄</span> Mushroom — speed boost</li>
+          <li><span class="w-icon star">⭐</span> Star — invincibility</li>
+          <li><span class="w-icon lightning">⚡</span> Lightning — slow rivals</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="game-main">
+      <canvas id="race-canvas" width="900" height="600" tabindex="0"></canvas>
+      <div id="race-overlay" class="race-overlay hidden">
+        <div class="overlay-card">
+          <h2 id="overlay-title">Kart Blitz</h2>
+          <p id="overlay-message">Enter your name and hit Start Race!</p>
+          <input type="text" id="player-name" maxlength="30" placeholder="Your racer name" value="Player" />
+          <button id="start-btn" class="btn-primary">Start Race</button>
+          <button id="restart-btn" class="btn-secondary hidden">Race Again</button>
+        </div>
+      </div>
+      <div id="countdown" class="countdown hidden"></div>
+    </main>
+
+    <aside class="leaderboard-panel">
+      <h2>Leaderboard</h2>
+      <ol id="leaderboard" class="leaderboard-list">
+        <% @top_scores.each_with_index do |score, i| %>
+          <li>
+            <span class="lb-rank"><%= i + 1 %></span>
+            <span class="lb-name"><%= score.player_name %></span>
+            <span class="lb-time"><%= score.formatted_time %></span>
+          </li>
+        <% end %>
+      </ol>
+      <% if @top_scores.empty? %>
+        <p class="empty-leaderboard">No times yet — be the first!</p>
+      <% end %>
+    </aside>
+  </div>
+</div>
+
+<%= javascript_import_module_tag "game/main" %>
