@@ -1,0 +1,66 @@
+<% content_for :title, "Race — TurboShell Rally" %>
+<% content_for :body_class, "page play" %>
+
+<div
+  class="race-shell"
+  data-controller="race"
+  data-race-player-name-value="<%= @player_name %>"
+  data-race-character-value="<%= @character[:id] %>"
+  data-race-character-color-value="<%= @character[:color] %>"
+  data-race-character-accent-value="<%= @character[:accent] %>"
+  data-race-character-name-value="<%= @character[:name] %>"
+  data-race-results-url-value="<%= race_results_path %>"
+>
+  <header class="race-top">
+    <a class="brand-mark compact" href="<%= root_path %>">TurboShell</a>
+    <div class="hud" data-race-target="hud">
+      <div class="hud-block">
+        <span class="hud-label">Pos</span>
+        <span class="hud-value" data-race-target="position">1/5</span>
+      </div>
+      <div class="hud-block">
+        <span class="hud-label">Lap</span>
+        <span class="hud-value" data-race-target="lap">1/3</span>
+      </div>
+      <div class="hud-block">
+        <span class="hud-label">Time</span>
+        <span class="hud-value" data-race-target="timer">0:00.00</span>
+      </div>
+      <div class="hud-block item-slot">
+        <span class="hud-label">Item</span>
+        <span class="hud-item" data-race-target="item">—</span>
+      </div>
+    </div>
+    <a class="btn btn-ghost btn-small" href="<%= root_path %>">Quit</a>
+  </header>
+
+  <div class="canvas-wrap">
+    <canvas data-race-target="canvas" width="1280" height="720"></canvas>
+    <div class="overlay" data-race-target="overlay">
+      <div class="overlay-card" data-race-target="overlayCard">
+        <p class="overlay-kicker" data-race-target="overlayKicker">Get Ready</p>
+        <h2 data-race-target="overlayTitle">TurboShell Rally</h2>
+        <p data-race-target="overlayBody">Drive with arrows or WASD. Space uses your item.</p>
+        <button type="button" class="btn btn-primary" data-action="race#start" data-race-target="startButton">
+          Lights Out
+        </button>
+        <div class="overlay-actions" data-race-target="finishActions" hidden>
+          <a class="btn btn-primary" href="<%= play_path(character: @character[:id], name: @player_name) %>" data-turbo="false">Race Again</a>
+          <a class="btn btn-ghost" href="<%= leaderboard_path %>">Leaderboard</a>
+          <a class="btn btn-ghost" href="<%= root_path %>">Garage</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="touch-controls" data-race-target="touch" aria-label="Touch controls">
+    <div class="touch-pad">
+      <button type="button" data-action="touchstart->race#pressLeft touchend->race#releaseLeft touchcancel->race#releaseLeft">◀</button>
+      <button type="button" data-action="touchstart->race#pressRight touchend->race#releaseRight touchcancel->race#releaseRight">▶</button>
+    </div>
+    <div class="touch-pad">
+      <button type="button" data-action="touchstart->race#pressUp touchend->race#releaseUp touchcancel->race#releaseUp">▲</button>
+      <button type="button" data-action="touchstart->race#pressItem touchend->race#releaseItem touchcancel->race#releaseItem">ITEM</button>
+    </div>
+  </aside>
+</div>

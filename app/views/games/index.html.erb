@@ -1,0 +1,112 @@
+<% content_for :title, "TurboShell Rally" %>
+<% content_for :body_class, "page home" %>
+
+<div class="home-shell">
+  <header class="site-nav">
+    <a class="brand-mark" href="<%= root_path %>">TurboShell</a>
+    <nav>
+      <a href="<%= leaderboard_path %>">Leaderboard</a>
+      <a class="nav-cta" href="#garage">Start Race</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-track" aria-hidden="true">
+      <div class="hero-kart hero-kart-a"></div>
+      <div class="hero-kart hero-kart-b"></div>
+      <div class="hero-shell"></div>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Night Circuit · Item Warfare</p>
+      <h1 class="brand-title">TurboShell Rally</h1>
+      <p class="lede">Drift the asphalt, snag mystery crates, and fire shells like a kart classic — right in your browser.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#garage">Enter Garage</a>
+        <a class="btn btn-ghost" href="<%= leaderboard_path %>">View Times</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="weapons" id="weapons">
+    <h2>Arsenal</h2>
+    <p class="section-sub">Pick up crates mid-race. Position shapes what you draw.</p>
+    <ul class="weapon-grid">
+      <li>
+        <span class="weapon-icon banana"></span>
+        <strong>Banana</strong>
+        <span>Drop a peel and spin rivals out.</span>
+      </li>
+      <li>
+        <span class="weapon-icon green-shell"></span>
+        <strong>Green Shell</strong>
+        <span>Straight-shot chaos down the lane.</span>
+      </li>
+      <li>
+        <span class="weapon-icon red-shell"></span>
+        <strong>Red Shell</strong>
+        <span>Locks onto the kart ahead.</span>
+      </li>
+      <li>
+        <span class="weapon-icon mushroom"></span>
+        <strong>Mushroom</strong>
+        <span>Burst of raw acceleration.</span>
+      </li>
+      <li>
+        <span class="weapon-icon lightning"></span>
+        <strong>Lightning</strong>
+        <span>Zap every rival for a moment.</span>
+      </li>
+      <li>
+        <span class="weapon-icon star"></span>
+        <strong>Star</strong>
+        <span>Invincible speed — don't get hit.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="garage" id="garage">
+    <h2>Garage</h2>
+    <p class="section-sub">Choose a racer, name your run, and hit the circuit.</p>
+
+    <%= form_with url: play_path, method: :get, local: true, class: "garage-form", data: { turbo: false } do |f| %>
+      <label class="field">
+        <span>Racer name</span>
+        <%= f.text_field :name, maxlength: 24, placeholder: "Your name", required: true, value: "Racer" %>
+      </label>
+
+      <fieldset class="character-picker">
+        <legend>Kart</legend>
+        <% @characters.each_with_index do |character, index| %>
+          <label class="character-card" style="--kart: <%= character[:color] %>; --accent: <%= character[:accent] %>;">
+            <input type="radio" name="character" value="<%= character[:id] %>" <%= "checked" if index.zero? %>>
+            <span class="kart-swatch"></span>
+            <span class="kart-name"><%= character[:name] %></span>
+          </label>
+        <% end %>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary btn-wide">Start Race</button>
+    <% end %>
+  </section>
+
+  <% if @top_results.any? %>
+    <section class="home-board">
+      <h2>Hot Laps</h2>
+      <ol class="mini-board">
+        <% @top_results.each_with_index do |result, i| %>
+          <li>
+            <span class="place">#<%= i + 1 %></span>
+            <span class="who"><%= result.player_name %></span>
+            <span class="time"><%= result.formatted_total %></span>
+          </li>
+        <% end %>
+      </ol>
+      <a class="text-link" href="<%= leaderboard_path %>">Full leaderboard →</a>
+    </section>
+  <% end %>
+
+  <footer class="site-foot">
+    <p>Arrow keys / WASD to drive · Space to fire · 3 laps · Beat the pack</p>
+  </footer>
+</div>

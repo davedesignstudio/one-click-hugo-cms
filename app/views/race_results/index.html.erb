@@ -1,0 +1,62 @@
+<% content_for :title, "Leaderboard — TurboShell Rally" %>
+<% content_for :body_class, "page board" %>
+
+<div class="board-shell">
+  <header class="site-nav">
+    <a class="brand-mark" href="<%= root_path %>">TurboShell</a>
+    <nav>
+      <a href="<%= root_path %>#garage">Garage</a>
+      <a class="nav-cta" href="<%= root_path %>#garage">Race</a>
+    </nav>
+  </header>
+
+  <section class="board-hero">
+    <h1>Leaderboard</h1>
+    <p>Fastest finishes on Neon Loop.</p>
+  </section>
+
+  <% if @podium.any? %>
+    <ol class="podium">
+      <% @podium.each_with_index do |result, index| %>
+        <li class="podium-slot place-<%= index + 1 %>">
+          <span class="medal"><%= %w[1st 2nd 3rd][index] %></span>
+          <strong><%= result.player_name %></strong>
+          <span><%= result.character.titleize %></span>
+          <em><%= result.formatted_total %></em>
+        </li>
+      <% end %>
+    </ol>
+  <% end %>
+
+  <section class="board-table-wrap">
+    <% if @results.any? %>
+      <table class="board-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Racer</th>
+            <th>Kart</th>
+            <th>Finish</th>
+            <th>Best Lap</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @results.each_with_index do |result, index| %>
+            <tr>
+              <td><%= index + 1 %></td>
+              <td><%= result.player_name %></td>
+              <td><%= result.character.titleize %></td>
+              <td>P<%= result.finish_position %></td>
+              <td><%= result.formatted_best_lap %></td>
+              <td><%= result.formatted_total %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <p class="empty-board">No times yet. Be the first to finish Neon Loop.</p>
+      <a class="btn btn-primary" href="<%= root_path %>#garage">Start Racing</a>
+    <% end %>
+  </section>
+</div>
