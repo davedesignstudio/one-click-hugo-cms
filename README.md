@@ -36,9 +36,16 @@ bin/rails server
 
 Open [http://localhost:3000](http://localhost:3000), then hit **Start race**.
 
+## Placeholder art
+
+Game sprites live in `public/game/placeholders/` as labeled temporary SVGs (karts, item box, weapons, grandstand).
+
+Replace any file in place with final art — keep the same filename. The loader is `app/javascript/game/placeholders.js`.
+
 ## Stack
 
 - Ruby on Rails 8
 - Importmap + Stimulus
 - SQLite for race results
 - Canvas 2D game engine under `app/javascript/game/`
+- Placeholder SVG sprites under `public/game/placeholders/`

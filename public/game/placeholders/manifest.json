@@ -1,0 +1,19 @@
+{
+  "note": "Temporary placeholder art. Replace files in place; keep the same filenames.",
+  "base_path": "/game/placeholders",
+  "files": [
+    "kart-player.svg",
+    "kart-nova.svg",
+    "kart-blaze.svg",
+    "kart-echo.svg",
+    "item-box.svg",
+    "banana.svg",
+    "green-shell.svg",
+    "red-shell.svg",
+    "mushroom.svg",
+    "oil.svg",
+    "lightning.svg",
+    "grandstand.svg",
+    "boost-flame.svg"
+  ]
+}

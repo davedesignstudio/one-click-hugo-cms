@@ -12,8 +12,8 @@
 <main class="hero">
   <div class="hero-atmosphere" aria-hidden="true">
     <div class="hero-track-lines"></div>
-    <div class="hero-kart hero-kart-a"></div>
-    <div class="hero-kart hero-kart-b"></div>
+    <img class="hero-kart hero-kart-a" src="/game/placeholders/kart-player.svg" alt="" width="96" height="60">
+    <img class="hero-kart hero-kart-b" src="/game/placeholders/kart-nova.svg" alt="" width="96" height="60">
     <div class="hero-dust"></div>
   </div>
 
@@ -32,13 +32,14 @@
   <h2>Arsenal</h2>
   <p>Pick up item crates mid-race. Fire with Space or the on-screen button.</p>
   <ul class="weapon-list">
-    <li><span class="weapon-icon banana"></span><strong>Banana</strong> — leave a trap</li>
-    <li><span class="weapon-icon shell"></span><strong>Green Shell</strong> — straight shot</li>
-    <li><span class="weapon-icon red-shell"></span><strong>Red Shell</strong> — hunts ahead</li>
-    <li><span class="weapon-icon mushroom"></span><strong>Mushroom</strong> — burst boost</li>
-    <li><span class="weapon-icon oil"></span><strong>Oil Slick</strong> — send them sliding</li>
-    <li><span class="weapon-icon bolt"></span><strong>Lightning</strong> — zap the pack</li>
+    <li><img class="weapon-art" src="/game/placeholders/banana.svg" alt="" width="40" height="40"><strong>Banana</strong> — leave a trap</li>
+    <li><img class="weapon-art" src="/game/placeholders/green-shell.svg" alt="" width="40" height="40"><strong>Green Shell</strong> — straight shot</li>
+    <li><img class="weapon-art" src="/game/placeholders/red-shell.svg" alt="" width="40" height="40"><strong>Red Shell</strong> — hunts ahead</li>
+    <li><img class="weapon-art" src="/game/placeholders/mushroom.svg" alt="" width="40" height="40"><strong>Mushroom</strong> — burst boost</li>
+    <li><img class="weapon-art" src="/game/placeholders/oil.svg" alt="" width="40" height="40"><strong>Oil Slick</strong> — send them sliding</li>
+    <li><img class="weapon-art" src="/game/placeholders/lightning.svg" alt="" width="40" height="40"><strong>Lightning</strong> — zap the pack</li>
   </ul>
+  <p class="art-note">Weapon icons are labeled placeholder art — drop finals into <code>public/game/placeholders/</code>.</p>
 </section>
 
 <% if @top_results.any? %>

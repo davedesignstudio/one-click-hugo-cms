@@ -83,7 +83,7 @@ export function onTrack(point) {
   return distanceToCenterline(point) <= TRACK_WIDTH * 0.5
 }
 
-export function drawTrack(ctx) {
+export function drawTrack(ctx, { sprites = {} } = {}) {
   // Grass / sand field
   const grass = ctx.createLinearGradient(0, 0, 0, CANVAS_H)
   grass.addColorStop(0, "#1f6f5b")
@@ -142,13 +142,18 @@ export function drawTrack(ctx) {
   }
   ctx.restore()
 
-  // Grandstand blocks
-  ctx.fillStyle = "rgba(20, 32, 24, 0.55)"
-  roundRect(ctx, 520, 250, 180, 70, 10)
-  ctx.fill()
-  ctx.fillStyle = "rgba(242, 183, 5, 0.35)"
-  roundRect(ctx, 540, 265, 140, 16, 6)
-  ctx.fill()
+  // Grandstand (placeholder art when available)
+  const stand = sprites.grandstand
+  if (stand) {
+    ctx.drawImage(stand, 500, 240, 200, 80)
+  } else {
+    ctx.fillStyle = "rgba(20, 32, 24, 0.55)"
+    roundRect(ctx, 520, 250, 180, 70, 10)
+    ctx.fill()
+    ctx.fillStyle = "rgba(242, 183, 5, 0.35)"
+    roundRect(ctx, 540, 265, 140, 16, 6)
+    ctx.fill()
+  }
 }
 
 function strokeCenterline(ctx) {

@@ -1,6 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 import { RaceEngine, formatRaceTime } from "game/engine"
 import { drawTrack } from "game/track"
+import { itemAssetKey, loadPlaceholders, PLACEHOLDER_PATHS } from "game/placeholders"
 
 export default class extends Controller {
   static targets = [
@@ -9,6 +10,7 @@ export default class extends Controller {
     "place",
     "timer",
     "itemName",
+    "itemArt",
     "itemSlot",
     "standings",
     "countdown",
@@ -33,6 +35,12 @@ export default class extends Controller {
   connect() {
     this.engine = null
     this.finishPayload = null
+    this.sprites = {}
+    this.spritesReady = loadPlaceholders().then((images) => {
+      this.sprites = images
+      this.drawIdle()
+      return images
+    })
     this.boundKeyDown = (e) => this.onKey(e, true)
     this.boundKeyUp = (e) => this.onKey(e, false)
     window.addEventListener("keydown", this.boundKeyDown)
@@ -49,29 +57,30 @@ export default class extends Controller {
   drawIdle() {
     const canvas = this.canvasTarget
     const ctx = canvas.getContext("2d")
-    drawTrack(ctx)
+    drawTrack(ctx, { sprites: this.sprites })
     ctx.fillStyle = "rgba(8, 14, 12, 0.35)"
     ctx.fillRect(0, 0, canvas.width, canvas.height)
   }
 
-  startRace(event) {
+  async startRace(event) {
     event.preventDefault()
     const name = (this.nameInputTarget.value || "You").trim().slice(0, 16) || "You"
     this.overlayTarget.hidden = true
     this.finishOverlayTarget.hidden = true
     this.saveStatusTarget.hidden = true
     this.finishPayload = null
-    this.runCountdown().then(() => {
-      this.engine?.stop()
-      this.engine = new RaceEngine({
-        canvas: this.canvasTarget,
-        totalLaps: this.lapsValue,
-        playerName: name,
-        onHud: (hud) => this.renderHud(hud),
-        onFinish: (payload) => this.handleFinish(payload, name)
-      })
-      this.engine.start()
+    const sprites = (await this.spritesReady) || this.sprites
+    await this.runCountdown()
+    this.engine?.stop()
+    this.engine = new RaceEngine({
+      canvas: this.canvasTarget,
+      totalLaps: this.lapsValue,
+      playerName: name,
+      sprites,
+      onHud: (hud) => this.renderHud(hud),
+      onFinish: (payload) => this.handleFinish(payload, name)
     })
+    this.engine.start()
   }
 
   async runCountdown() {
@@ -93,6 +102,16 @@ export default class extends Controller {
     this.timerTarget.textContent = formatRaceTime(hud.timeMs)
     this.itemNameTarget.textContent = hud.itemLabel
     this.itemSlotTarget.classList.toggle("armed", hud.itemLabel !== "—")
+
+    const artKey = hud.itemId ? itemAssetKey(hud.itemId) : null
+    if (artKey && PLACEHOLDER_PATHS[artKey]) {
+      this.itemArtTarget.hidden = false
+      this.itemArtTarget.src = PLACEHOLDER_PATHS[artKey]
+      this.itemArtTarget.alt = hud.itemLabel
+    } else {
+      this.itemArtTarget.hidden = true
+      this.itemArtTarget.removeAttribute("alt")
+    }
 
     this.standingsTarget.innerHTML = hud.standings
       .map(

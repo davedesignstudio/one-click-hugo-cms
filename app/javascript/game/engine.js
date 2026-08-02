@@ -10,6 +10,7 @@ import {
   onTrack,
   progressAlongTrack
 } from "game/track"
+import { drawPlaceholder, itemAssetKey, kartAssetKey } from "game/placeholders"
 
 const ITEM_TYPES = [
   { id: "banana", label: "Banana", weight: 3 },
@@ -63,13 +64,14 @@ function createKart({ id, name, color, x, y, angle, isPlayer = false, aiSkill = 
 }
 
 export class RaceEngine {
-  constructor({ canvas, totalLaps = 3, playerName = "You", onHud, onFinish }) {
+  constructor({ canvas, totalLaps = 3, playerName = "You", onHud, onFinish, sprites = {} }) {
     this.canvas = canvas
     this.ctx = canvas.getContext("2d")
     this.totalLaps = totalLaps
     this.playerName = playerName
     this.onHud = onHud
     this.onFinish = onFinish
+    this.sprites = sprites
     this.keys = {}
     this.running = false
     this.raceStarted = false
@@ -88,6 +90,10 @@ export class RaceEngine {
     }))
     this.karts = this.buildGrid(playerName)
     this.cameraShake = 0
+  }
+
+  sprite(key) {
+    return this.sprites?.[key] || null
   }
 
   buildGrid(playerName) {
@@ -467,6 +473,7 @@ export class RaceEngine {
       place: this.playerPlace(),
       placeLabel: PLACE_LABELS[this.playerPlace() - 1] || "—",
       timeMs: Math.round(this.elapsed),
+      itemId: player?.item?.id || null,
       itemLabel: player?.item?.label || "—",
       standings: this.orderedKarts().map((k, i) => ({
         name: k.name,
@@ -485,7 +492,7 @@ export class RaceEngine {
       ctx.translate((Math.random() - 0.5) * this.cameraShake, (Math.random() - 0.5) * this.cameraShake)
     }
 
-    drawTrack(ctx)
+    drawTrack(ctx, { sprites: this.sprites })
     this.drawItemBoxes(ctx)
     this.hazards.forEach((h) => this.drawHazard(ctx, h))
     this.projectiles.forEach((p) => this.drawProjectile(ctx, p))
@@ -501,6 +508,16 @@ export class RaceEngine {
     this.itemBoxes.forEach((box) => {
       if (!box.alive) return
       const pulse = 1 + Math.sin(performance.now() / 180) * 0.08
+      const size = 28 * pulse
+      const img = this.sprite("itemBox")
+      if (
+        drawPlaceholder(ctx, img, box.x, box.y, size, size, {
+          rotation: performance.now() / 500
+        })
+      ) {
+        return
+      }
+
       ctx.save()
       ctx.translate(box.x, box.y)
       ctx.rotate(performance.now() / 500)
@@ -520,6 +537,10 @@ export class RaceEngine {
   }
 
   drawHazard(ctx, hazard) {
+    const key = itemAssetKey(hazard.type)
+    const img = key ? this.sprite(key) : null
+    if (drawPlaceholder(ctx, img, hazard.x, hazard.y, 28, 28)) return
+
     ctx.save()
     ctx.translate(hazard.x, hazard.y)
     if (hazard.type === "banana") {
@@ -541,6 +562,10 @@ export class RaceEngine {
   }
 
   drawProjectile(ctx, shell) {
+    const key = itemAssetKey(shell.type)
+    const img = key ? this.sprite(key) : null
+    if (drawPlaceholder(ctx, img, shell.x, shell.y, 30, 30, { rotation: shell.angle })) return
+
     ctx.save()
     ctx.translate(shell.x, shell.y)
     ctx.rotate(shell.angle)
@@ -557,38 +582,49 @@ export class RaceEngine {
 
   drawKart(ctx, kart) {
     const scale = kart.shrinkTimer > 0 ? 0.65 : 1
+    const kartImg = this.sprite(kartAssetKey(kart))
+    const boostImg = this.sprite("boostFlame")
+
     ctx.save()
     ctx.translate(kart.x, kart.y)
     ctx.rotate(kart.angle)
     ctx.scale(scale, scale)
 
     if (kart.boostTimer > 0) {
-      ctx.fillStyle = "rgba(242, 183, 5, 0.45)"
-      ctx.beginPath()
-      ctx.moveTo(-22, -8)
-      ctx.lineTo(-34 - Math.random() * 8, 0)
-      ctx.lineTo(-22, 8)
-      ctx.fill()
+      if (!drawPlaceholder(ctx, boostImg, -28, 0, 28, 20)) {
+        ctx.fillStyle = "rgba(242, 183, 5, 0.45)"
+        ctx.beginPath()
+        ctx.moveTo(-22, -8)
+        ctx.lineTo(-34 - Math.random() * 8, 0)
+        ctx.lineTo(-22, 8)
+        ctx.fill()
+      }
     }
 
-    ctx.fillStyle = "#111"
-    ctx.fillRect(-12, -12, 8, 5)
-    ctx.fillRect(6, -12, 8, 5)
-    ctx.fillRect(-12, 7, 8, 5)
-    ctx.fillRect(6, 7, 8, 5)
+    if (!drawPlaceholder(ctx, kartImg, 0, 0, 44, 28)) {
+      ctx.fillStyle = "#111"
+      ctx.fillRect(-12, -12, 8, 5)
+      ctx.fillRect(6, -12, 8, 5)
+      ctx.fillRect(-12, 7, 8, 5)
+      ctx.fillRect(6, 7, 8, 5)
 
-    ctx.fillStyle = kart.color
-    roundRectPath(ctx, -16, -9, 32, 18, 6)
-    ctx.fill()
+      ctx.fillStyle = kart.color
+      roundRectPath(ctx, -16, -9, 32, 18, 6)
+      ctx.fill()
 
-    ctx.fillStyle = "rgba(247, 241, 232, 0.8)"
-    roundRectPath(ctx, 2, -6, 10, 12, 3)
-    ctx.fill()
+      ctx.fillStyle = "rgba(247, 241, 232, 0.8)"
+      roundRectPath(ctx, 2, -6, 10, 12, 3)
+      ctx.fill()
 
-    if (kart.isPlayer) {
+      if (kart.isPlayer) {
+        ctx.strokeStyle = "#f2b705"
+        ctx.lineWidth = 2
+        ctx.stroke()
+      }
+    } else if (kart.isPlayer) {
       ctx.strokeStyle = "#f2b705"
       ctx.lineWidth = 2
-      ctx.stroke()
+      ctx.strokeRect(-22, -14, 44, 28)
     }
 
     ctx.restore()
