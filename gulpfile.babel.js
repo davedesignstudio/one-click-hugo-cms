@@ -12,6 +12,16 @@ import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
 
+if (!Object.fromEntries) {
+  Object.fromEntries = (entries) => {
+    const obj = {};
+    for (const [key, value] of entries) {
+      obj[key] = value;
+    }
+    return obj;
+  };
+}
+
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
 const defaultArgs = ["-d", "../dist", "-s", "site"];
