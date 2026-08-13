@@ -1,14 +1,4 @@
 // JS Goes here - ES6 supported
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    if (!user) {
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-}
-
 const navToggle = document.getElementById("nav-toggle");
 const navMenu = document.getElementById("nav-menu");
 
@@ -19,7 +9,7 @@ if (navToggle && navMenu) {
     navToggle.setAttribute("aria-expanded", isOpen);
   });
 
-  navMenu.querySelectorAll("a").forEach(link => {
+  navMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("nav-menu--open");
       navToggle.classList.remove("nav-toggle--active");
@@ -28,8 +18,8 @@ if (navToggle && navMenu) {
   });
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", event => {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", (event) => {
     const targetId = anchor.getAttribute("href");
     if (targetId.length <= 1) return;
 
@@ -37,6 +27,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (!target) return;
 
     event.preventDefault();
-    target.scrollIntoView({ behavior: "smooth" });
+    target.scrollIntoView({behavior: "smooth"});
   });
 });
