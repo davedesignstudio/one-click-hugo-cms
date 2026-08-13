@@ -1,7 +1,7 @@
 ---
 title: "Custom woodwork built to last"
 subtitle: Expert carpentry for homes, businesses, and everything in between
-image: /img/home-jumbotron.jpg
+image: /img/tokyo-rain-header.png
 blurb:
     heading: Why Anthem Carpentry?
     text: "Anthem Carpentry is for homeowners and builders who believe great craftsmanship should be honest, durable, and beautiful. We handle everything from custom cabinetry to finish carpentry, using quality materials and time-tested techniques on every project."

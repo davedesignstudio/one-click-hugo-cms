@@ -84,3 +84,65 @@
     display: none;
   }
 }
+
+/* Hero / jumbotron */
+.jumbotron {
+  min-height: 28rem;
+  background-color: #4a7fa5;
+}
+
+.jumbotron-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(74, 144, 196, 0.15) 0%,
+    rgba(43, 37, 35, 0.35) 100%
+  );
+  pointer-events: none;
+}
+
+.jumbotron-rain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(transparent 0%, rgba(255, 255, 255, 0.45) 100%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 3px 18px;
+  opacity: 0.35;
+  animation: jumbotron-rain 0.7s linear infinite;
+}
+
+.jumbotron-rain::before,
+.jumbotron-rain::after {
+  content: "";
+  position: absolute;
+  inset: -100% 0 0 0;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent 0,
+    transparent 8px,
+    rgba(255, 255, 255, 0.55) 8px,
+    rgba(255, 255, 255, 0.55) 9px
+  );
+  transform: rotate(12deg);
+  animation: jumbotron-rain-fall 0.55s linear infinite;
+}
+
+.jumbotron-rain::after {
+  left: 40%;
+  opacity: 0.5;
+  animation-duration: 0.75s;
+  animation-delay: 0.2s;
+}
+
+@keyframes jumbotron-rain {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 0 0, 0 18px; }
+}
+
+@keyframes jumbotron-rain-fall {
+  0% { transform: translateY(-10%) rotate(12deg); }
+  100% { transform: translateY(10%) rotate(12deg); }
+}
